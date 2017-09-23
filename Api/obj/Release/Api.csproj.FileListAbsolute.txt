@@ -1,0 +1,61 @@
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Api.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Api.pdb
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Business.Facede.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.SelfHost.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.WebHost.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\itextsharp.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Simple.Data.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\MySql.Data.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\MySqlBackup.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.Unity.Interception.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.Unity.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Business.Facede.pdb
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.SelfHost.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.WebHost.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.Unity.Interception.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.ServiceLocation.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.Unity.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\obj\Release\Api.csprojResolveAssemblyReference.cache
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\obj\Release\Api.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\obj\Release\Api.pdb
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Api.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Api.pdb
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Business.Facede.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\System.Net.Http.Formatting.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.SelfHost.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.WebHost.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\itextsharp.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Simple.Data.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\MySql.Data.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\MySqlBackup.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Newtonsoft.Json.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.Unity.Interception.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.ServiceLocation.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.Unity.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Business.Facede.pdb
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\System.Net.Http.Formatting.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.SelfHost.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\System.Web.Http.WebHost.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.Unity.Interception.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.ServiceLocation.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\bin\Release\Microsoft.Practices.Unity.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\obj\Release\Api.csprojResolveAssemblyReference.cache
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\obj\Release\Api.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\obj\Release\Api.pdb

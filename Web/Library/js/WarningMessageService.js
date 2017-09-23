@@ -1,0 +1,29 @@
+﻿var commonWarningMessage = function () {
+    var self = this;
+    self.IsbnMandatory = "Please enter the book ISBN number.";
+    self.BookTitleMandatory = "Please enter the book title.";
+    self.BookauthorsMandatory = "Please enter the book authors seperated by comma.";
+    self.BookPublishersMandatory = "Please enter the ook publishers seperated by comma.";
+    self.BookEditionMandatory = "Please enter the book edition.";
+    self.BranchMandatory = "Please select branch.";
+    self.BookPriceMandatory = "Please enter book price(in rupees).";
+    self.BookQuantityMandatory = "Please enter the book quantity.";
+    self.ContactNumberRegEx = /^[0-9]{10,12}$/;
+    self.BookLanguageMandatory = 'Please enter the book language.';
+    self.BookCategoryMandatory = 'Please select book category';
+    self.SemisterMandatory = 'Please enter book semister.';
+    self.ContactNumberRegExMessage = "Contact number should contains only numbers.";
+    self.PhotoSizeWarningMessage = "Maximum photo size is 2MB";
+    self.YearMandatory = 'Please select year.';
+    self.NumberRegExMessage = 'Please enter only numbers.';
+    self.NumberRequiredMessage  = 'Please enter number of seats.';
+    self.NumberRegEx = /^[0-9]+$/;
+    self.BranchNameMandatory = "Please enter branch name.";
+    self.StudentIdMandatory = 'Please enter student id.';
+    
+    self.FeeRegEx = /^\d+(\.\d{1,2})?$/;
+    self.FeeRegExMessage = 'Fee should contain only numbers.';
+    self.FeeMandatoryMessage = 'This field is mandatory';
+    self.PaidFeeShoouldBeLessThanOrEqaulToTotalFeeMessage = 'Paid fee should be less than or equal to total fee';
+    self.DueFeeShouldBeLessThanOrEqualToCurrentDueFee = 'Entered due fee should be less than or equal to current due fee';
+};

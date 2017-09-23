@@ -1,0 +1,181 @@
+<section>
+    <div class="modal-content">
+        <div class="popup_header">
+            <button type="button" class="close" data-dismiss="modal" data-ng-click="close()" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Add Fee Details</h4>
+        </div>
+        <div class="modal-body" style="color: black !important" data-ng-show="!Model.HasPaidFee">
+            <div class="html ui top attached segment">
+                <form class="ui form margin-top-35" name="addfeeform">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>Year of Admission</label>
+                            <span data-ng-bind="Model.Student.Year"></span>
+                        </div>
+                        <div class="field row-fluid">
+                            <label>Tution Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.CourseFee" placeholder="Enter Course Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="coursefee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.coursefee.$error.required && addfeeform.coursefee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.coursefee.$error.pattern && addfeeform.coursefee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                    </div>
+                    <div class="two fields">
+                         <div class="field row-fluid">
+                            <label>Admission Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.AdmissionFee" placeholder="Enter Admission Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="admissionfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.admissionfee.$error.required && addfeeform.admissionfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.admissionfee.$error.pattern && addfeeform.admissionfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                        <div class="field row-fluid">
+                            <label>Phyciatric Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.PhyciatricFee" placeholder="Enter Phyciatric Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="phyciatricfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.phyciatricfee.$error.required && addfeeform.phyciatricfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.phyciatricfee.$error.pattern && addfeeform.phyciatricfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>                       
+                    </div>
+
+                     <div class="two fields">
+                        <div class="field row-fluid">
+                            <label>Library Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.LibraryFee" placeholder="Enter Library Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="libraryfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.libraryfee.$error.required && addfeeform.libraryfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.libraryfee.$error.pattern && addfeeform.libraryfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                        <div class="field row-fluid">
+                            <label>Lab Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.LabFee" placeholder="Enter Lab Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="labfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.labfee.$error.required && addfeeform.labfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.labfee.$error.pattern && addfeeform.labfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="two fields">
+                        <div class="field row-fluid">
+                            <label>Medical Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.MedicalFee" placeholder="Enter Medical Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="medicalfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.medicalfee.$error.required && addfeeform.medicalfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.medicalfee.$error.pattern && addfeeform.medicalfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                        <div class="field row-fluid">
+                            <label>Transportation Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.TransportationFee" placeholder="Enter Transportation Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="transportationfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.transportationfee.$error.required && addfeeform.transportationfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.transportationfee.$error.pattern && addfeeform.transportationfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="two fields">
+                        <div class="field row-fluid">
+                            <label>Examination Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.ExaminationFee" placeholder="Enter Examination Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="examinationfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.examinationfee.$error.required && addfeeform.examinationfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.examinationfee.$error.pattern && addfeeform.examinationfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                        <div class="field row-fluid">
+                            <label>Hostel Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.HostelFee" placeholder="Enter Hostel Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="hostelfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.hostelfee.$error.required && addfeeform.hostelfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.hostelfee.$error.pattern && addfeeform.hostelfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                    </div>                   
+
+                    <div class="two fields">
+                        <div class="field row-fluid">
+                            <label>Mess Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.MessFee" placeholder="Enter Mess Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="messfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.messfee.$error.required && addfeeform.messfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.messfee.$error.pattern && addfeeform.messfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                        <div class="field row-fluid">
+                            <label>Books Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.BooksFee" placeholder="Enter Books Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="booksfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.booksfee.$error.required && addfeeform.booksfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.booksfee.$error.pattern && addfeeform.booksfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="two fields">
+                        <div class="field row-fluid">
+                            <label>Uniform Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.UniformFee" placeholder="Enter Uniform Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="uniformfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.uniformfee.$error.required && addfeeform.uniformfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.uniformfee.$error.pattern && addfeeform.uniformfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                        <div class="field row-fluid">
+                            <label>Sports Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.SportsFee" placeholder="Enter Sports Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="sportsfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.sportsfee.$error.required && addfeeform.sportsfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.sportsfee.$error.pattern && addfeeform.sportsfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="two fields">
+                        <div class="field row-fluid">
+                            <label>Caution Deposit Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.CautionDepositFee" placeholder="Enter Caution Deposit Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="cautiondepositfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.cautiondepositfee.$error.required && addfeeform.cautiondepositfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.cautiondepositfee.$error.pattern && addfeeform.cautiondepositfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                        <div class="field row-fluid">
+                            <label>Other Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.OtherFee" placeholder="Enter Other Fee" data-ng-blur="Model.CalculateTotalFee()"
+                                required name="otherfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.otherfee.$error.required && addfeeform.otherfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.otherfee.$error.pattern && addfeeform.otherfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="two fields">
+                        <div class="field row-fluid">
+                            <label>Total Fee</label>
+                            <input type="text" class="span12" readonly data-ng-model="Model.Student.TotalFee" />
+                        </div>
+                        <div class="field row-fluid">
+                            <label>Fee Paid<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.PaidFee" placeholder="Enter Fee Paid" data-ng-blur="Model.CalculateDueFee();Model.ValidatePaidFee()"
+                                required name="paidfee" data-ng-pattern="Validation.FeeRegEx" />
+                            <div class="red bold" data-ng-show="addfeeform.paidfee.$error.required && addfeeform.paidfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                            <div class="red bold" data-ng-show="addfeeform.paidfee.$error.pattern && addfeeform.paidfee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                            <div class="red bold" data-ng-show="!Model.IsPaidFeeLesserThanTotalFee"><i class="info circle icon"></i><span data-ng-bind="Validation.PaidFeeShoouldBeLessThanOrEqaulToTotalFeeMessage"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="two fields">
+                        <div class="field row-fluid">
+                            <label>Due Fee<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.Student.DueFee" readonly />
+                        </div>
+                        <div class="field row-fluid">
+                            <label>Due Date</label>
+                            <input type="date" class="span12" data-ng-model="Model.Student.DueDate" />
+                        </div>
+                    </div>
+                </form>
+                <div class="ui top attached label" style="font-size: large; font-weight: bold">Student Details</div>
+            </div>
+        </div>
+        <div class="popup_actions">
+            <div class="ui yellow button" data-ng-click="Model.AddFee()" data-ng-if="addfeeform.$valid && Model.IsPaidFeeLesserThanTotalFee">Submit</div>
+            <div class="ui  button" data-ng-click="close()">Close</div>
+        </div>
+    </div>
+    <div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="Model.ShowLoader">
+        <div class="ui active dimmer">
+            <div class="ui large text loader">Loading</div>
+        </div>
+    </div>
+</section>

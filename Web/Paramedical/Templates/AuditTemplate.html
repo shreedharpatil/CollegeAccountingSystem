@@ -1,0 +1,95 @@
+<section data-ng-show="StudentProfileTemplate.length == 0">
+    <section>
+        <div class="html ui top attached segment">
+            <form class="ui form" name="auditform"> 
+                <div class="three fields margin-top-35">
+                    <div class="field">
+                        <label>Branch<span class="mandatory">*</span></label>
+                        <select class="ui search dropdown" data-ng-options="branch.Id as branch.Name for branch in Model.Branches" required
+                            name="branch1" data-ng-model="Model.Student.BranchId">
+                        </select>
+                         <div class="red bold" data-ng-show="Model.Student.BranchId == 0 && auditform.branch1.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BranchMandatory"></span></div>
+                    </div>
+                    <div class="field">
+                         <label>Year of admission<span class="mandatory">*</span></label>
+                            <select class="ui search dropdown" data-ng-options="year as year for year in Model.Years" name="year2"
+                                required="required" data-ng-model="Model.Student.Year">
+                            </select>
+                            <div class="red bold" data-ng-show="Model.Student.Year == '----- Please Select ------' && auditform.year2.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.YearMandatory"></span></div>                       
+                    </div>
+                    <div class="field margin-top-27">
+
+                        <div class="ui yellow button" data-ng-click="Model.SearchStudents()" data-ng-if="auditform.$valid && Model.Student.BranchId != 0 && Model.Student.Year != '----- Please Select ------'">Submit</div>
+                        <div class="ui  button" data-ng-click="Model.Clear()">Clear</div>
+                    </div>
+
+                </div>
+            </form>
+            <div class="ui top attached label" style="font-size: large; font-weight: bold">Select Criteria</div>
+        </div>
+    </section>
+
+    <div class="html ui top attached segment" data-ng-show="Model.NoStudentsFound">
+        <form class="ui form">
+            <div id="noStudentsFound1" class="margin-top-35">
+                <div class="ui info  message">
+                    <div class="header">
+                        No student records found for selected criteria. Please check your criteria and try again.
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="Model.ShowLoader">
+        <div class="ui active dimmer">
+            <div class="ui large text loader">Loading</div>
+        </div>
+        <p></p>
+    </div>
+
+    <div class="html ui top attached segment" data-ng-show="Model.ShowMainTemplate">
+        <form class="ui form margin-top-35">
+            <div class="four fields">
+                <div class="field">
+                    <label>Number Of Students</label>
+                    <span data-ng-bind="Model.AuditEnvelope.MainAuditSummary.NumberOfStudents"></span>
+                </div>
+
+                <div class="field">
+                    <label>Total Admission Fee</label>
+                    <span data-ng-bind="Model.AuditEnvelope.MainAuditSummary.TotalAdmissionFee | currency :'&#x20B9;'"></span>
+                </div>
+
+                <div class="field">
+                    <label>Total Paid Fee</label>
+                    <span data-ng-bind="Model.AuditEnvelope.MainAuditSummary.TotalPaidFee | currency :'&#x20B9;'"></span>
+                </div>
+
+                <div class="field">
+                    <label>Total Due Fee</label>
+                    <span data-ng-bind="Model.AuditEnvelope.MainAuditSummary.TotalDueFee | currency :'&#x20B9;'"></span>
+                </div>
+            </div>
+        </form>
+        <div class="ui top attached label" style="font-size: large; font-weight: bold">Audit Summary</div>
+    </div>
+
+    <section data-ng-show="StudentProfileTemplate.length == 0">
+        <div class="html ui top attached segment" data-ng-show="Model.ShowMainTemplate">
+            <form class="ui form margin-top-35">
+                <ul class="nav nav-tabs">
+                    <li data-ng-class="{true:'active', false:''}[Model.CurrentTab == 0]"><a href="" data-ng-click="Model.ChangeTab(0)">Quota</a></li>
+                    <li data-ng-class="{true:'active', false:''}[Model.CurrentTab == 1]"><a href="" data-ng-click="Model.ChangeTab(1)">Year</a></li>
+                    <li data-ng-class="{true:'active', false:''}[Model.CurrentTab == 2]"><a href="" data-ng-click="Model.ChangeTab(2)">Gender</a></li>
+                </ul>
+                <div data-ng-include="Model.AuditMainTemplate"></div>
+            </form>
+            <div class="ui top attached label" style="font-size: large; font-weight: bold">Audit Details</div>
+        </div>
+    </section>
+</section>
+
+<section id="studentprofile1">
+    <div data-ng-include="StudentProfileTemplate"></div>
+</section>

@@ -1,0 +1,32 @@
+﻿<form class="ui form"  name="criteria3">
+    <div class="four fields margin-top-35">
+        <div class="field row-fluid">
+            <label>Name<span class="mandatory">*</span></label>
+            <input type="text" data-ng-model="Model.Student.Name" class="span12" placeholder="Enter name of student to search" name="name2" required />
+            <div class="red bold" data-ng-show="criteria3.name2.$invalid && criteria3.name2.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.NameMandatory"></span></div>
+        </div>
+        <div class="field">
+            <label>Gender<span class="mandatory">*</span></label>
+            <select class="ui search dropdown" data-ng-model="Model.Student.Gender" required name="gender3">
+                <option value="">----- Please Select ------</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <div class="red bold" data-ng-show="criteria3.gender3.$invalid && criteria3.gender3.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.GenderMandatory"></span></div>
+        </div>
+        <div class="field">
+            <label>Quota<span class="mandatory">*</span></label>
+            <select class="ui search dropdown" data-ng-model="Model.Student.Quota" name="quota3" required>
+                <option value="">----- Please Select ------</option>
+                <option>Government</option>
+                <option>Management</option>
+            </select>
+            <div class="red bold" data-ng-show="criteria3.quota3.$invalid && criteria3.quota3.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.QuotaMandatory"></span></div>
+        </div>
+        <div class="field margin-top-27">
+
+            <div class="ui yellow button" data-ng-click="Model.SearchStudents(3)" data-ng-if="criteria3.$valid">Submit</div>
+            <div class="ui  button" data-ng-click="Model.Clear('criteria3')">Clear</div>
+        </div>
+    </div>
+</form>

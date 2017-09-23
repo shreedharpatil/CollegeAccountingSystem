@@ -1,0 +1,32 @@
+﻿<section>
+    <div class="modal-content">
+        <div class="popup_header">
+            <button type="button" class="close" data-dismiss="modal" data-ng-click="Model.Close()" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Add Book Category Details</h4>
+        </div>
+        <div class="modal-body" style="color: black !important" >
+            <div class="html ui top attached segment">
+                <form class="ui form margin-top-35" name="addnewbookcategoryform">
+                    <div class="two fields">
+                        <div class="field row-fluid">
+                            <label>Book Category Name<span class="required">*</span></label>
+                            <input type="text" class="span12" data-ng-model="Model.BookCategory.Description" placeholder="Enter categoruy name" 
+                                   required name="category" />
+                            <div class="red bold" data-ng-show="addnewbookcategoryform.ccategoryoursefee.$error.required && addnewbookcategoryform.category.$dirty"><i class="info circle icon"></i>Please enter name of book category.</div>
+                        </div>
+                    </div>
+                </form>
+                <div class="ui top attached label" style="font-size: large; font-weight: bold">Book Category Details</div>
+            </div>
+        </div>
+        <div class="popup_actions">
+            <div class="ui yellow button" data-ng-click="Model.SaveBookCategory()" data-ng-if="addnewbookcategoryform.$valid">Submit</div>
+            <div class="ui  button" data-ng-click="Model.Close()">Close</div>
+        </div>
+    </div>
+    <div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="Model.ShowLoader">
+        <div class="ui active dimmer">
+            <div class="ui large text loader">Loading</div>
+        </div>
+    </div>
+</section>

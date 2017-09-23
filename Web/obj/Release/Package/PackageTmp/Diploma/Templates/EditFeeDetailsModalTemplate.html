@@ -1,0 +1,101 @@
+<div class="">
+    <form class="">
+        <div class="modal-content">
+            <div class="popup_header">
+                <button type="button" class="close" data-dismiss="modal" data-ng-click="close()" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Update Fee Details</h4>
+            </div>
+
+            <div class="modal-body" style="color: black !important" data-ng-show="Model.HasPaidFee">
+                <div class="ui info huge message">
+                    <i class="close icon"></i>
+                    <div class="header">
+                        This student has already paid fee. Click close button to close the popup window.
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body" style="color: black !important" data-ng-show="!Model.HasPaidFee">
+                <div class="html ui top attached segment">
+                    <form class="ui form">
+                        <h4 class="ui dividing header">Current Fee Details</h4>
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="span6">
+                                    <label>Total Fee</label>
+                                </div>
+                                <div class="span6">
+                                    <span data-ng-bind="Model.Fee.TotalFee | currency : '&#x20B9;'"></span>
+                                </div>
+                            </div>
+
+                            <div class="span6">
+                                <div class="span6">
+                                    <label>Fee Paid</label>
+                                </div>
+                                <div class="span6">
+                                    <span data-ng-bind="Model.Fee.PaidFee | currency : '&#x20B9;'"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="span6">
+                                    <label>Current Due Fee</label>
+                                </div>
+                                <div class="span6">
+                                    <span data-ng-bind="Model.Fee.Due_Fee | currency : '&#x20B9;'"></span>
+                                </div>
+                            </div>
+
+                            <div class="span6">
+                                <div class="span6">
+                                    <label>Current Due Date</label>
+                                </div>
+                                <div class="span6">
+                                    <span data-ng-bind="Model.Fee.Due_Date | date:'dd/MMM/yyyy'"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="ui positive message" data-ng-show="Model.IsSuccess">
+                    <i class="close icon"></i>
+                    <div class="header" data-ng-bind="Model.SuccessMessage ">
+                    </div>
+                </div>
+
+                <div class="html ui top attached segment">
+                    <form class="ui form" name="updatefeeform">
+                        <h4 class="ui dividing header">Update Fee Details</h4>
+                        <div class="two fields">
+                            <div class="field row-fluid">
+                                <label>Due Fee</label>
+                                <input type="text" class="span12" placeholder="Enter due fee." data-ng-model="Model.Fee.DueFee" data-ng-blur="Model.CalculateDueFee()"
+                                    required name="duefee" data-ng-pattern="Validation.FeeRegEx" />
+                                <div class="red bold" data-ng-show="updatefeeform.duefee.$error.required && updatefeeform.duefee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeMandatoryMessage"></span></div>
+                                <div class="red bold" data-ng-show="updatefeeform.duefee.$error.pattern && updatefeeform.duefee.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.FeeRegExMessage"></span></div>
+                                <div class="red bold" data-ng-show="Model.ValidateDueAmount()"><i class="info circle icon"></i><span data-ng-bind="Validation.DueFeeShouldBeLessThanOrEqualToCurrentDueFee"></span></div>
+                            </div>
+                        </div>
+                        <div class="field row-fluid">
+                            <label>Due Date</label>
+                            <input type="date" class="span12" name="dd" data-ng-model="Model.Fee.EnteredDueDate">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="popup_actions">
+        <div class="ui yellow button" data-ng-click="Model.UpdateFeeDetails()" data-ng-show="!Model.HasPaidFee && updatefeeform.$valid && !Model.ValidateDueAmount()">Update</div>
+        <div class="ui  button" data-ng-click="close()">Close</div>
+    </div>
+     <div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="Model.ShowLoader">
+        <div class="ui active dimmer">
+            <div class="ui large text loader">Loading</div>
+        </div>
+    </div>
+</div>

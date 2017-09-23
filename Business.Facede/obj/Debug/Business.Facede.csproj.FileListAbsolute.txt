@@ -1,0 +1,104 @@
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Business.Facede.dll.config
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Business.Facede.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Business.Facede.pdb
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\itextsharp.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\MySql.Data.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\MySqlBackup.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\NReco.PdfGenerator.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\PdfFileWriter.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Simple.Data.Ado.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Simple.Data.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Simple.Data.Mysql.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\bin\Debug\NReco.PdfGenerator.xml
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\obj\Debug\Business.Facede.dll
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\obj\Debug\Business.Facede.pdb
+C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\obj\Debug\Business.Facede.csprojResolveAssemblyReference.cache
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Business.Facede.dll.config
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Business.Facede.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Business.Facede.pdb
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.SqlServer.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\itextsharp.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\MySql.Data.Entity.EF6.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\MySqlBackup.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\NReco.PdfGenerator.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\PdfFileWriter.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Simple.Data.Ado.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Simple.Data.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Simple.Data.Mysql.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.xml
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.SqlServer.xml
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.xml
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\NReco.PdfGenerator.xml
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\obj\Debug\Business.Facede.csprojResolveAssemblyReference.cache
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\obj\Debug\Business.Facede.dll
+F:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\obj\Debug\Business.Facede.pdb
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Business.Facede.dll.config
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Business.Facede.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Business.Facede.pdb
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.SqlServer.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\itextsharp.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\MySql.Data.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\MySql.Data.Entity.EF6.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\MySqlBackup.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\NReco.PdfGenerator.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\PdfFileWriter.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Simple.Data.Ado.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Simple.Data.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Simple.Data.Mysql.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\EntityFramework.SqlServer.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\bin\Debug\NReco.PdfGenerator.xml
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\obj\Debug\Business.Facede.csprojResolveAssemblyReference.cache
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\obj\Debug\Business.Facede.dll
+G:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\obj\Debug\Business.Facede.pdb

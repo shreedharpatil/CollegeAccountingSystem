@@ -1,0 +1,357 @@
+<section data-ng-controller="StudentProfileController">
+    <div class="html ui top attached segment">
+        <form class="ui form">
+            <div class="row-fluid  margin-top-35">
+                <div class="span4">
+                    <img data-ng-src="{{Model.Student.ImageUrl}}" />
+                </div>
+                <div class="span8">
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <label>Student Id</label>
+                        </div>
+                        <div class="span6">
+                            <span data-ng-bind="Model.Student.Id"></span>
+                        </div>
+                        <div class="span2">
+                            <div class="ui yellow button" data-ng-click="Model.Back()">Back</div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <label>Name</label>
+                        </div>
+                        <div class="span6">
+                            <span data-ng-bind="Model.Student.Name"></span>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <label>Gender</label>
+                        </div>
+                        <div class="span6">
+                            <span data-ng-bind="Model.Student.Gender"></span>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <label>Contact Number</label>
+                        </div>
+                        <div class="span6">
+                            <span data-ng-bind="Model.Student.ContactNumber"></span>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <label>Seat Quota</label>
+                        </div>
+                        <div class="span6">
+                            <span data-ng-bind="Model.Student.Quota"></span>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <label>Branch</label>
+                        </div>
+                        <div class="span6">
+                            <span data-ng-bind="Model.Student.BranchName"></span>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <label>Address</label>
+                        </div>
+                        <div class="span6">
+                            <span data-ng-bind="Model.Student.Address"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="ui top attached label" style="font-size: large; font-weight: bold">Student Details</div>
+    </div>
+
+    <div class="html ui top attached segment student_card">
+        <form class="ui form margin-top-35 ">
+            <div class="four fields">
+                <div class="field">
+                    <label>No. Of Admissions</label>
+                    <span data-ng-bind="Model.AdmissionDetails.length"></span>
+                </div>
+                <div class="field">
+                    <label>Total Fee</label>
+                    <span data-ng-bind="Model.TotalFee | currency :'&#x20B9;'"></span>
+                </div>
+                <div class="field">
+                    <label>Total Paid Fee</label>
+                    <span data-ng-bind="Model.TotalPaidFee | currency :'&#x20B9;'"></span>
+                </div>
+                <div class="field">
+                    <label>Pending Fee</label>
+                    <span data-ng-bind="Model.TotalDueFee | currency :'&#x20B9;'"></span>
+                </div>
+            </div>
+        </form>
+        <div class="ui top attached label" style="font-size: large; font-weight: bold">Student Admission Summary</div>
+    </div>
+    <div class="html ui top attached segment">
+        <form class="ui form margin-top-35">
+            <div data-ng-show="Model.AdmissionDetails.length == 0">
+                <div class="ui info huge message">
+                    <div class="header">
+                        There are no admission details for this student. Click New Admission link above to add new admission.
+                    </div>
+                </div>
+
+            </div>
+            <div class="ui special cards margin-top-35" data-ng-show="Model.AdmissionDetails.length > 0">
+                <div class="card student_card" data-ng-repeat="admission in Model.AdmissionDetails" style="width: 900px">
+                    <div class="content ">
+                        <a class="header" data-ng-bind="Model.Years[admission.Year-1]"></a>
+                        <div class="row-fluid">
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span7">
+                                        <label>Admission Form Fee</label>
+                                    </div>
+                                    <div class="span5">
+                                        <span data-ng-bind="admission.AdmissionFormFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span7">
+                                        <label>Admission Fee</label>
+                                    </div>
+                                    <div class="span5">
+                                        <span data-ng-bind="admission.AdmissionFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span7">
+                                        <label>Tution Fee</label>
+                                    </div>
+                                    <div class="span5">
+                                        <span data-ng-bind="admission.CourseFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span7">
+                                        <label>Identity Card Fee</label>
+                                    </div>
+                                    <div class="span5">
+                                        <span data-ng-bind="admission.IdentityCardFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span7">
+                                        <label>Student Association Fee</label>
+                                    </div>
+                                    <div class="span5">
+                                        <span data-ng-bind="admission.StudentAssociationFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Reading Room Fee</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.ReadingRoomFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Magazine Fee</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.MagazineFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Library Fee</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.LibraryFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Lab Fee</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.LabFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Student Welfare Fund</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.StudentWelfareFundFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Teacher Benefit Fund</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.TeacherBenefitFundFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Other Fees</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.OtherFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Admission Fine</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.AdmissionFineFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Sports Fees</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.SportsFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Fine</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.FineFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Total Fee</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.TotalFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Paid Fee</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.PaidFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Due Fee</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.DueFee | currency :'&#x20B9;'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Due Date</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-bind="admission.DueDate | date:'dd/MMM/yyyy'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <label>Status</label>
+                                    </div>
+                                    <div class="span6">
+                                        <span data-ng-class="{true:'label label-success',false:'label label-danger red-background'}[admission.Status == 'Paid']" data-ng-bind="admission.Status"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="">
+                            <a class="pointer" data-ng-click="Model.UpdateFeeDetails(admission)"><i class="edit icon"></i>Edit Fee Details</a>
+                            <a class="pointer" href="/api/year?id={{Model.Student.Id}}&year={{admission.Year}}"><i class="download icon"></i>Download Receipt</a>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="ui top attached label" style="font-size: large; font-weight: bold">
+            <span>Student Admission Details</span>
+            <a data-ng-click="Model.NewAdmission()" class="float-right pointer">New Admission</a>
+        </div>
+    </div>
+</section>
+
+<script>
+    function triggerdimmer() {
+        $(document).ready(function () {
+            $('.special.cards .content').dimmer({
+                on: 'hover'
+            });
+        });
+    };
+</script>

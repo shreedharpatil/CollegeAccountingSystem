@@ -1,0 +1,35 @@
+﻿<form class="ui form" name="criteria2">
+    <div class="four fields margin-top-35">
+        <div class="field">
+            <label>Branch<span class="mandatory">*</span></label>
+            <select class="ui search dropdown" data-ng-options="branch.Id as branch.Name for branch in Model.Branches" required
+                name="branch1" data-ng-model="Model.Student.BranchId">
+            </select>
+            <div class="red bold" data-ng-show="Model.Student.BranchId == 0 && criteria2.branch1.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BranchMandatory"></span></div>
+        </div>
+        <div class="field">
+            <label>Sem<span class="mandatory">*</span></label>
+            <select class="ui search dropdown" data-ng-model="Model.Student.Year" name="year1" required>
+                <option value="">----- Please Select ------</option>
+                <option value="1">First Sem</option>
+                <option value="2">Second Sem</option>
+                <option value="3">Third Sem</option>
+                <option value="4">Fourth Sem</option>
+                <option value="5">Fifth Sem</option>
+                <option value="6">Sixth Sem</option>
+            </select>
+            <div class="red bold" data-ng-show="criteria2.year1.$invalid && criteria2.year1.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BranchMandatory"></span></div>
+        </div>
+        <div class="field">
+            <label>Year of admission<span class="mandatory">*</span></label>
+            <select class="ui search dropdown" data-ng-options="year as year for year in Model.Years" name="year2"
+                required="required" data-ng-model="Model.Student.AdmissionYear">
+            </select>
+            <div class="red bold" data-ng-show="Model.Student.AdmissionYear == '----- Please Select ------' && criteria2.year2.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.YearMandatory"></span></div>
+        </div>
+        <div class="field margin-top-27">
+            <div class="ui yellow button" data-ng-click="Model.SearchStudents(2)" data-ng-if="criteria2.$valid && Model.Student.BranchId != 0 && !(Model.Student.AdmissionYear == '----- Please Select ------')">Submit</div>
+            <div class="ui  button" data-ng-click="Model.Clear('criteria2')">Clear</div>
+        </div>
+    </div>
+</form>

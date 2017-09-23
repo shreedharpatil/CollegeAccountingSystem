@@ -1,0 +1,94 @@
+<section>
+    <div class="html ui top attached segment">
+        <form class="ui form" name="admissionform">
+            <h4 class="ui dividing header">Student Information</h4>
+            <h4 class="ui dividing header">Student Information</h4>
+            <div class="two fields top-margin-37">
+                <div class="field">
+                    <label>Name<span class="mandatory">*</span></label>
+                    <div class="three fields">
+                        <div class="field row-fluid">
+                            <input type="text" class="span12" name="firstname" placeholder="First Name" required
+                                data-ng-model="Model.Admission.FirstName">
+                            <div class="red bold" data-ng-show="admissionform.firstname.$invalid && admissionform.firstname.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.LastNameMandatory"></span></div>
+                        </div>
+
+                        <div class="field row-fluid">
+                            <input type="text" class="span12" name="fathername" placeholder="Father Name" required
+                                data-ng-model="Model.Admission.FatherName">
+                            <div class="red bold" data-ng-show="admissionform.fathername.$invalid && admissionform.fathername.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.LastNameMandatory"></span></div>
+                        </div>
+
+                        <div class="field row-fluid">
+                            <input type="text" class="span12" name="lastname" placeholder="Last Name" required
+                                data-ng-model="Model.Admission.LastName">
+                            <div class="red bold" data-ng-show="admissionform.lastname.$invalid && admissionform.lastname.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.FirstNameMandatory"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field ">
+                    <label>Gender<span class="mandatory">*</span></label>
+                    <select class="ui search dropdown" name="gender" data-ng-model="Model.Admission.Gender" required>
+                        <option value="">----- Please Select ------</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <div class="red bold" data-ng-show="admissionform.gender.$invalid && admissionform.gender.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.GenderMandatory"></span></div>
+                </div>
+            </div>
+
+            <div class="two fields">
+                <div class="field">
+                    <label>Branch<span class="mandatory">*</span></label>
+                    <select class="ui search dropdown" data-ng-options="branch.Id as branch.Name for branch in Model.Branches" required
+                        name="branch" data-ng-model="Model.Admission.BranchId">
+                    </select>
+                    <div class="red bold" data-ng-show="Model.Admission.BranchId == 0 && admissionform.branch.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BranchMandatory"></span></div>
+                </div>
+                <div class="field">
+                    <label>Quota<span class="mandatory">*</span></label>
+                    <select class="ui search dropdown" data-ng-model="Model.Admission.Quota" name="quota" required>
+                        <option value="">----- Please Select ------</option>
+                        <option>Government</option>
+                        <option>Management</option>
+                    </select>
+                    <div class="red bold" data-ng-show="admissionform.quota.$invalid && admissionform.quota.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.QuotaMandatory"></span></div>
+                </div>
+            </div>
+
+
+            <div class="two fields">
+                <div class="field">
+                    <label>Address<span class="mandatory">*</span></label>
+                    <textarea placeholder="Enter Address" data-ng-model="Model.Admission.Address" required name="address"></textarea>
+                    <div class="red bold" data-ng-show="admissionform.address.$invalid && admissionform.address.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.AddressMandatory"></span></div>
+                </div>
+                <div class="field row-fluid">
+                    <label>Contact Number<span class="mandatory">*</span></label>
+                    <input type="text" class="span12" name="cn" placeholder="Contact Number" required data-ng-model="Model.Admission.ContactNumber"
+                        data-ng-pattern="Validation.ContactNumberRegEx">
+                    <div class="red bold" data-ng-show="admissionform.cn.$error.required && admissionform.cn.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.ContactNumberMandatory"></span></div>
+                    <div class="red bold" data-ng-show="admissionform.cn.$error.pattern && admissionform.cn.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.ContactNumberRegExMessage "></span></div>
+
+                    <label>Upload photo<span class="mandatory">*</span></label>
+                    <input type="file" id="file" name="photo" multiple onchange="angular.element(this).scope().Model.filesChanged(this)" required />
+                    <div class="red bold" data-ng-show="admissionform.photo.$invalid-required && admissionform.photo.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.PhotoSizeWarningMessage"></span></div>
+                    <div class="red bold"><i class="info circle icon"></i>Photo size should be less than 2MB</div>
+                    <!--<button data-ng-click="Model.UploadPhoto()">Upload</button>-->
+                </div>
+            </div>
+
+            <div style="float: right">
+                <div class="ui yellow button" data-ng-click="Model.CheckSeatsAvailbility()" data-ng-if="admissionform.$valid">Submit</div>
+                <div class="ui  button" data-ng-click="Model.Clear()">Clear</div>
+            </div>
+        </form>
+        <div class="ui top attached label" style="font-size: large; font-weight: bold">Student Admission</div>
+    </div>
+
+    <div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="Model.ShowLoader">
+        <div class="ui active dimmer">
+            <div class="ui large text loader">Loading</div>
+        </div>
+    </div>
+</section>

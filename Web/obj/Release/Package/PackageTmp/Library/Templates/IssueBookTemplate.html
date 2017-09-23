@@ -1,0 +1,32 @@
+﻿<section style="height: 800px;">
+    <div class="ui three top ordered attached steps">
+        <div class="step" data-ng-class="Model.FirstTabClass">
+            <div class="content">
+                <div class="title">Book</div>
+                <div class="description">Select the book</div>
+            </div>
+        </div>
+        <div class="step" data-ng-class="Model.SecondTabClass">
+            <div class="content">
+                <div class="title">Student</div>
+                <div class="description">Select the student</div>
+            </div>
+        </div>
+        <div class="step" data-ng-class="Model.ThirdTabClass">
+            <div class="content">
+                <div class="title">Confirm Book</div>
+                <div class="description">Issue the book</div>
+            </div>
+        </div>
+    </div>
+
+    <div data-ng-include="Model.CurrentTemplate"></div>
+
+</section>
+
+<div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="Model.ShowLoader">
+    <div class="ui active dimmer">
+        <div class="ui large text loader">Loading</div>
+    </div>
+</div>
+

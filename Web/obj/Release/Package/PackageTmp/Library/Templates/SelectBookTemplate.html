@@ -1,0 +1,102 @@
+﻿<div class="html ui top attached segment" id="selectbooksection">
+    <div class="ui top attached label" style="font-size: large; font-weight: bold">Select Book</div>
+
+    <form class="ui form" name="issuebookform">
+        <div class="three fields">
+            <div class="field ">
+                <label>Select Branch<span class="mandatory">*</span></label>
+                <div class="field row-fluid">
+                    <select class="ui " data-ng-options="branch.Id as branch.Name for branch in Model.Branches" required
+                            name="branch" data-ng-model="Model.SearchCriteria.BranchId"></select>
+                    <div class="red bold" data-ng-show="Model.SearchCriteria.BranchId == 0 && issuebookform.branch.$dirty">
+                        <i class="info circle icon"></i><span class="" data-ng-bind="Validation.BranchMandatory"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="field ">
+                <label>Select Category<span class="mandatory">*</span></label>
+                <div class="field row-fluid">
+                    <select class="ui " data-ng-options="branch.CategoryId as branch.Description for branch in Model.BookCategories" required
+                            name="category" data-ng-model="Model.SearchCriteria.CategoryId"></select>
+                    <div class="red bold" data-ng-show="Model.SearchCriteria.CategoryId == 0 && issuebookform.category.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BookCategoryMandatory"></span></div>
+                </div>
+            </div>
+            <div class="field margin-top-23">
+                <div class="ui yellow button" data-ng-click="Model.SearchBooks()" data-ng-if="Model.SearchCriteria.BranchId != 0 && Model.SearchCriteria.CategoryId != 0">Search</div>
+                <a class="ui next_previous_button" data-ng-click="Model.ChangeStep(2)"
+                   data-ng-if="issuebookform.$valid && Model.Book.BookId != undefined && Model.Book.BookId != 0">
+                    Next<i class="pointing right icon"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="fields">
+            <div class="field">
+                <label>Select Book</label>
+                <div class="ui floating dropdown labeled icon button">
+                    <i class="book icon"></i>
+                    <span class="text" id="bookdropdown">Filter Books</span>
+                    <div class="menu">
+                        <div class="ui icon  input">
+                            <i class="search icon"></i>
+                            <input type="text" class="search_box_height" placeholder="Search books..." data-ng-model="Model.FilterText">
+                        </div>
+                        <div class="divider"></div>
+                        <div class="header">
+                            <i class="book icon"></i>
+                            Books
+                        </div>
+
+                        <div class="scrolling menu">
+                            <div class="item" data-ng-repeat="book in Model.Books | filter : Model.FilterText" data-ng-click="Model.SelectBook(book)">
+                                <i class="book icon"></i>
+                                <div class="ui orange  circular label">T</div>
+                                {{book.Title}}
+                                <div class="ui green  circular label">A</div>
+                                {{book.Authors}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fields">
+            <div class="field margin-top-10">
+                <div class="ui orange  circular label">T</div> - Book Title
+                <div class="ui green  circular label">A</div> - Book Authors
+            </div>
+        </div>
+    </form>
+    <table class="ui sortable celled table">
+        <thead>
+        <tr>
+            <th>Authors</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Publishers</th>
+            <th>Edition</th>
+            <th>ISBN</th>
+            <th>Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="pointer student_card">
+            <td data-ng-bind="Model.Book.Authors"></td>
+            <td data-ng-bind="Model.Book.Title"></td>
+            <td data-ng-bind="Model.Book.Description"></td>
+            <td data-ng-bind="Model.Book.Publishers"></td>
+            <td data-ng-bind="Model.Book.Edition"></td>
+            <td data-ng-bind="Model.Book.ISBN"></td>
+            <td data-ng-bind="Model.Book.Quantity"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+  <script>
+
+    $(document).ready(function () {
+
+        $('.ui.dropdown').dropdown();
+    });
+</script>

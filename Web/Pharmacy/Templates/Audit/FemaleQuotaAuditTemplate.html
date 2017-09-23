@@ -1,0 +1,60 @@
+﻿<section>
+    <div class="html ui top attached segment">
+        <form class="ui form margin-top-35">
+            <div class="four fields  margin-top-35">
+                <div class="field">
+                    <label>No. Of Students</label>
+                    <span data-ng-bind="Model.AuditEnvelope.Female.AuditSummary.NumberOfStudents"></span>
+                </div>
+                <div class="field">
+                    <label>Total Fee</label>
+                    <span data-ng-bind="Model.AuditEnvelope.Female.AuditSummary.TotalAdmissionFee | currency :'&#x20B9;'"></span>
+                </div>
+                <div class="field">
+                    <label>Total Fee Paid</label>
+                    <span data-ng-bind="Model.AuditEnvelope.Female.AuditSummary.TotalPaidFee | currency :'&#x20B9;'"></span>
+                </div>
+                <div class="field">
+                    <label>Total Pending Fee</label>
+                    <span data-ng-bind="Model.AuditEnvelope.Female.AuditSummary.TotalDueFee | currency :'&#x20B9;'"></span>
+                </div>
+            </div>
+        </form>
+        <div class="ui top attached label" style="font-size: large; font-weight: bold">Female Students Audit Summary</div>
+    </div>
+
+    <div class="html ui top attached segment">
+        <form class="ui form margin-top-35">
+            <table class="ui sortable celled table" data-ng-show="Model.Students.length != 0">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Contact Number</th>
+                        <th>Quota</th>
+                        <th>Year</th>
+                        <th>TotalFee</th>
+                        <th>PaidFee</th>
+                        <th>DueFee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-class="{true:'positive',false:'negative'}[student.Status == 'Paid']"
+                         class="pointer student_card" data-ng-repeat="student in Model.AuditEnvelope.Female.AuditDetails" data-ng-click="Model.ShowStudentProfile(student)">
+                        <td><span data-ng-bind="student.Id"></span></td>
+                        <td data-ng-bind="student.Name"></td>
+                        <td data-ng-bind="student.Gender"></td>
+                        <td data-ng-bind="student.ContactNumber"></td>
+                        <td ><span class="label label-danger uv-background" data-ng-bind="student.Quota == 'Government' ? 'G':'M'"></span></td>          
+                        <td><span data-ng-bind="student.Year"></span></td>
+                        <td data-ng-bind="student.TotalFee | currency :'&#x20B9;'"></td>
+                        <td data-ng-bind="student.PaidFee | currency :'&#x20B9;'"></td>
+                        <td data-ng-bind="student.DueFee | currency :'&#x20B9;'"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <div class="ui top attached label" style="font-size: large; font-weight: bold">Female Student Audit Details</div>
+    </div>
+</section>

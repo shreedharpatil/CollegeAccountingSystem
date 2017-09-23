@@ -1,0 +1,4 @@
+create user shreedhar;
+grant all on DAS.* to shreedhar@localhost identified by 'patil';
+
+CREATE USER 'shreedhar'@'localhost' IDENTIFIED BY 'patil'; GRANT ALL PRIVILEGES ON * . * TO 'shreedhar'@'localhost'; FLUSH PRIVILEGES;

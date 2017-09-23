@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-Web-20150530061840;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-Web-20150530061840.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="G:\\projects\\Projects\\Arun\ projects\\CollegeAccountingSystem\\Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="Simple.Data.Properties.Settings.DefaultConnectionString-Web.config Connection String" description="Simple.Data.Properties.Settings.DefaultConnectionString Connection String used in web.config by the application to access the database." defaultValue="server=localhost;user=shreedhar;database=das;password=patil;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="G:\\projects\\Projects\\Arun\ projects\\CollegeAccountingSystem\\Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Simple.Data.Properties.Settings.DefaultConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

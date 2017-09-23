@@ -1,0 +1,8 @@
+﻿<section>
+    <ul class="nav nav-tabs">
+        <li data-ng-class="{true:'active', false:''}[Model.CurrentSubTab == 5]"><a href="" data-ng-click="Model.ChangeSubTab(5)">Male</a></li>
+        <li data-ng-class="{true:'active', false:''}[Model.CurrentSubTab == 6]"><a href="" data-ng-click="Model.ChangeSubTab(6)">Female</a></li>
+    </ul>
+
+    <div data-ng-include="Model.AuditSubTemplate"></div>
+</section>

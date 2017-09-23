@@ -1,0 +1,104 @@
+﻿<div class="html ui top attached segment" id="selectbooksection">
+    <div class="ui top attached label" style="font-size: large; font-weight: bold">Select Student</div>
+
+    <form class="ui form" name="selectstudentform" data-ng-init="Model.OnApplicationChanged()">
+        <div class="three fields">
+            <div class="field ">
+                <label>Select Educational Area<span class="mandatory">*</span></label>
+                <div class="field row-fluid">
+                    <select class="ui search dropdown" required
+                            name="branch" data-ng-model="Model.SearchCriteria.SelectedApplication" data-ng-change="Model.OnApplicationChanged()">
+                        <option>Diploma</option>
+                        <option>Paramedical</option>
+                        <option>Nursing</option>
+                        <option>Pharmacy</option>
+                        <option>Degree</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field ">
+                <label>Select Branch<span class="mandatory">*</span></label>
+                <div class="field row-fluid">
+                    <select class="ui " data-ng-options="branch.Id as branch.Name for branch in Model.StudentBranches" required
+                            name="branch" data-ng-model="Model.SearchCriteria.BranchId"></select>
+                    <div class="red bold" data-ng-show="Model.SearchCriteria.BranchId == 0 && issuebookform.branch.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BranchMandatory"></span></div>
+                </div>
+            </div>
+            <div class="field margin-top-23">
+                <div class="ui yellow button" data-ng-click="Model.LoadStudents()" data-ng-if="Model.SearchCriteria.BranchId != 0">Search</div>
+                <a class="ui next_previous_button" data-ng-click="Model.ChangeStep(3)" data-ng-if="Model.Student.Id != undefined && Model.Student.Id != 0">Next<i class="pointing right icon"></i></a>
+                <a class="ui next_previous_button" data-ng-click="Model.ChangeStep(1)" data-ng-if="selectstudentform.$valid"><i class="pointing left icon"></i>Back</a>
+            </div>
+
+        </div>
+        <div class="fields">
+            <div class="field">
+                <label>Select Book</label>
+                <div class="ui floating dropdown labeled icon button">
+                    <i class="users icon"></i>
+                    <span class="text" id="studentsdropdown">Filter Students</span>
+                    <div class="menu">
+                        <div class="ui icon  input">
+                            <i class="search icon"></i>
+                            <input type="text" placeholder="Search students..." class="search_box_height" data-ng-model="Model.FilterText">
+                        </div>
+                        <div class="divider"></div>
+                        <div class="header">
+                            <i class="users icon"></i>
+                            Students
+                        </div>
+
+                        <div class="scrolling menu">
+                            <div class="item" data-ng-repeat="student in Model.Students | filter : Model.FilterText" data-ng-click="Model.SelectStudent(student)">
+                                <img data-ng-src="{{student.Image_Url}}" alt="img" />
+                                <div class="ui orange  circular label">N</div>
+                                {{student.Name}}
+                                <div class="ui orange  circular label">F</div>
+                                {{student.FatherName }}
+                                <div class="ui green  circular label">C</div>
+                                {{student.ContactNumber}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fields">
+            <div class="field margin-top-10">
+                <div class="ui orange  circular label">N</div> - Student Name
+                <div class="ui orange  circular label">F</div> - Father Name
+                <div class="ui green  circular label">C</div> - Contact Number
+            </div>
+        </div>
+    </form>
+    <table class="ui sortable celled table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Father Name</th>
+                <th>Address</th>
+                <th>Contact No.</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="pointer student_card">
+                <td data-ng-bind="Model.Student.Id"></td>
+                <td data-ng-bind="Model.Student.Name"></td>
+                <td data-ng-bind="Model.Student.FatherName"></td>
+                <td data-ng-bind="Model.Student.Address"></td>
+                <td data-ng-bind="Model.Student.ContactNumber"></td>
+                <td data-ng-bind="Model.Student.Gender"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+
+    $(document).ready(function () {
+
+        $('.ui.dropdown').dropdown();
+    });
+</script>

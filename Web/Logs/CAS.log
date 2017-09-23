@@ -1,0 +1,2093 @@
+----------------------------------------
+Timestamp: 7/9/2015 5:58:54 PM
+
+Message: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Web\photos\degree\Kaka-Kaka--2.jpg'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at Api.Controllers.DegreeUploadPhotoController.<Post>d__1.MoveNext() in c:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\Controllers\Degree\DegreeUploadPhotoController.cs:line 44
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: SHREEDHAR-PC
+
+App Domain: /LM/W3SVC/386908890/ROOT-1-130809379153526136
+
+ProcessId: 820
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:4780
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 7/9/2015 6:01:55 PM
+
+Message: System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at Simple.Data.Extensions.EnumerableExtensions.ToDictionary[TKey,TValue](IEnumerable`1 source)
+   at Simple.Data.Ado.DataRecordExtensions.CreateDictionaryIndex(IDataRecord reader)
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.CreateIndexIfNecessary()
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.ExecuteReader()
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at Simple.Data.CastEnumerable`1.CastEnumerator.MoveNext()
+   at Simple.Data.CastEnumerable`1.CastEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Simple.Data.SimpleQuery.ToList[T]()
+   at Business.Facede.Degree.Query.GetStudentFeeDetailsQuery.ExecuteQueryWith(Int32 input) in c:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\Degree\Query\GetStudentFeeDetailsQuery.cs:line 59
+   at Api.Controllers.DegreeStudentController.Get(Int32 id) in c:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\Controllers\Degree\DegreeStudentController.cs:line 44
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.<>c__DisplayClass5.<ExecuteAsync>b__4()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: SHREEDHAR-PC
+
+App Domain: /LM/W3SVC/386908890/ROOT-1-130809379153526136
+
+ProcessId: 820
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:2780
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 7/10/2015 4:36:11 PM
+
+Message: System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at Simple.Data.Extensions.EnumerableExtensions.ToDictionary[TKey,TValue](IEnumerable`1 source)
+   at Simple.Data.Ado.DataRecordExtensions.CreateDictionaryIndex(IDataRecord reader)
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.CreateIndexIfNecessary()
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.ExecuteReader()
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at Simple.Data.CastEnumerable`1.CastEnumerator.MoveNext()
+   at Simple.Data.CastEnumerable`1.CastEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Simple.Data.SimpleQuery.ToList[T]()
+   at Business.Facede.Degree.Query.GetAuditDetailsQuery.ExecuteQueryWith(Student input) in c:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Business.Facede\Degree\Query\GetAuditDetailsQuery.cs:line 75
+   at Api.Controllers.DegreeAuditController.Get(Student student) in c:\Users\shreedhar\Documents\Visual Studio 2012\Projects\CollegeAccountingSystem\Api\Controllers\Degree\DegreeAuditController.cs:line 23
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.<>c__DisplayClass5.<ExecuteAsync>b__4()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: SHREEDHAR-PC
+
+App Domain: /LM/W3SVC/386908890/ROOT-5-130810197302677279
+
+ProcessId: 4620
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:5168
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/26/2016 5:33:32 PM
+
+Message: Simple.Data.UnresolvableObjectException: Table 'das.BRANCH' not found, or insufficient permissions.
+   at Simple.Data.Ado.Schema.TableCollection.Find(String tableName, String schemaName)
+   at Simple.Data.Ado.QueryBuilderBase.SetQueryContext(SimpleQuery query)
+   at Simple.Data.Ado.QueryBuilder.Build(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.GetQueryCommandBuilders(SimpleQuery& query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.RunQuery(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.SimpleQuery.Run()
+   at Simple.Data.SimpleQuery.Cast[T]()
+   at Simple.Data.SimpleQuery.ToList[T]()
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Business.Facede.Query.GetAllBranchesQuery.QueryAll() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\GetAllBranchesQuery.cs:line 17
+   at Api.Controllers.BranchController.Get() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\BranchController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131009815756492290
+
+ProcessId: 1176
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5704
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/26/2016 5:40:16 PM
+
+Message: Simple.Data.UnresolvableObjectException: Table 'das.BRANCH' not found, or insufficient permissions.
+   at Simple.Data.Ado.Schema.TableCollection.Find(String tableName, String schemaName)
+   at Simple.Data.Ado.QueryBuilderBase.SetQueryContext(SimpleQuery query)
+   at Simple.Data.Ado.QueryBuilder.Build(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.GetQueryCommandBuilders(SimpleQuery& query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.RunQuery(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.SimpleQuery.Run()
+   at Simple.Data.SimpleQuery.Cast[T]()
+   at Simple.Data.SimpleQuery.ToList[T]()
+   at Business.Facede.Query.GetAllBranchesQuery.QueryAll() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\GetAllBranchesQuery.cs:line 17
+   at Api.Controllers.BranchController.Get() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\BranchController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131009815756492290
+
+ProcessId: 1176
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5880
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/26/2016 5:40:24 PM
+
+Message: Simple.Data.UnresolvableObjectException: Table 'das.BRANCH' not found, or insufficient permissions.
+   at Simple.Data.Ado.Schema.TableCollection.Find(String tableName, String schemaName)
+   at Simple.Data.Ado.QueryBuilderBase.SetQueryContext(SimpleQuery query)
+   at Simple.Data.Ado.QueryBuilder.Build(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.GetQueryCommandBuilders(SimpleQuery& query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.RunQuery(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.SimpleQuery.Run()
+   at Simple.Data.SimpleQuery.Cast[T]()
+   at Simple.Data.SimpleQuery.ToList[T]()
+   at Business.Facede.Query.GetAllBranchesQuery.QueryAll() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\GetAllBranchesQuery.cs:line 17
+   at Api.Controllers.BranchController.Get() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\BranchController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131009815756492290
+
+ProcessId: 1176
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5880
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/26/2016 5:41:50 PM
+
+Message: Simple.Data.UnresolvableObjectException: Table 'das.BRANCH' not found, or insufficient permissions.
+   at Simple.Data.Ado.Schema.TableCollection.Find(String tableName, String schemaName)
+   at Simple.Data.Ado.QueryBuilderBase.SetQueryContext(SimpleQuery query)
+   at Simple.Data.Ado.QueryBuilder.Build(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.GetQueryCommandBuilders(SimpleQuery& query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.RunQuery(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.SimpleQuery.Run()
+   at Simple.Data.SimpleQuery.Cast[T]()
+   at Simple.Data.SimpleQuery.ToList[T]()
+   at Business.Facede.Query.GetAllBranchesQuery.QueryAll() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\GetAllBranchesQuery.cs:line 17
+   at Api.Controllers.BranchController.Get() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\BranchController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131009815756492290
+
+ProcessId: 1176
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3996
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/26/2016 5:43:51 PM
+
+Message: Simple.Data.UnresolvableObjectException: Table 'das.BRANCH' not found, or insufficient permissions.
+   at Simple.Data.Ado.Schema.TableCollection.Find(String tableName, String schemaName)
+   at Simple.Data.Ado.QueryBuilderBase.SetQueryContext(SimpleQuery query)
+   at Simple.Data.Ado.QueryBuilder.Build(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.GetQueryCommandBuilders(SimpleQuery& query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.RunQuery(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.SimpleQuery.Run()
+   at Simple.Data.SimpleQuery.Cast[T]()
+   at Simple.Data.SimpleQuery.ToList[T]()
+   at Business.Facede.Query.GetAllBranchesQuery.QueryAll() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\GetAllBranchesQuery.cs:line 17
+   at Api.Controllers.BranchController.Get() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\BranchController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131009815756492290
+
+ProcessId: 1176
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:4692
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/26/2016 5:45:49 PM
+
+Message: Simple.Data.UnresolvableObjectException: Table 'das.BRANCH' not found, or insufficient permissions.
+   at Simple.Data.Ado.Schema.TableCollection.Find(String tableName, String schemaName)
+   at Simple.Data.Ado.QueryBuilderBase.SetQueryContext(SimpleQuery query)
+   at Simple.Data.Ado.QueryBuilder.Build(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.GetQueryCommandBuilders(SimpleQuery& query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.RunQuery(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.SimpleQuery.Run()
+   at Simple.Data.SimpleQuery.Cast[T]()
+   at Simple.Data.SimpleQuery.ToList[T]()
+   at Business.Facede.Query.GetAllBranchesQuery.QueryAll() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\GetAllBranchesQuery.cs:line 17
+   at Api.Controllers.BranchController.Get() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\BranchController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131009815756492290
+
+ProcessId: 1176
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:4692
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/26/2016 5:48:20 PM
+
+Message: Simple.Data.UnresolvableObjectException: Table 'das.BRANCH' not found, or insufficient permissions.
+   at Simple.Data.Ado.Schema.TableCollection.Find(String tableName, String schemaName)
+   at Simple.Data.Ado.QueryBuilderBase.SetQueryContext(SimpleQuery query)
+   at Simple.Data.Ado.QueryBuilder.Build(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.GetQueryCommandBuilders(SimpleQuery& query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.RunQuery(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.SimpleQuery.Run()
+   at Simple.Data.SimpleQuery.Cast[T]()
+   at Simple.Data.SimpleQuery.ToList[T]()
+   at Business.Facede.Query.GetAllBranchesQuery.QueryAll() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\GetAllBranchesQuery.cs:line 17
+   at Api.Controllers.BranchController.Get() in f:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\BranchController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131009815756492290
+
+ProcessId: 1176
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5880
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/27/2016 9:36:17 AM
+
+Message: System.IO.DirectoryNotFoundException: Could not find a part of the path 'E://Backups\paramedical\27-Feb-2016'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   at System.IO.Directory.InternalCreateDirectoryHelper(String path, Boolean checkHost)
+   at Business.Facede.TakeDatabaseBackupCommand.TakeBackup(String application) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\TakeDatabaseBackupCommand.cs:line 29
+   at Api.Controllers.LogoutController.Get(String application) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\LogoutController.cs:line 17
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-22-131010391909943294
+
+ProcessId: 3328
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6364
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/28/2016 7:47:18 AM
+
+Message: System.InvalidOperationException: RectangleReadOnly: this Rectangle is read only.
+   at iTextSharp.text.RectangleReadOnly.ThrowReadOnlyError()
+   at Business.Facede.Query.GenerateSportsCertificate.ExecuteQueryWith(Student st) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\GenerateSportsCertificate.cs:line 24
+   at Api.Controllers.SportsCertificateController.Get() in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\SportsCertificateController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-10-131011192299879113
+
+ProcessId: 5196
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6620
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/28/2016 7:47:39 AM
+
+Message: System.InvalidOperationException: RectangleReadOnly: this Rectangle is read only.
+   at iTextSharp.text.RectangleReadOnly.ThrowReadOnlyError()
+   at Business.Facede.Query.GenerateSportsCertificate.ExecuteQueryWith(Student st) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\GenerateSportsCertificate.cs:line 24
+   at Api.Controllers.SportsCertificateController.Get() in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\SportsCertificateController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-10-131011192299879113
+
+ProcessId: 5196
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6620
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/28/2016 7:48:26 AM
+
+Message: System.InvalidOperationException: RectangleReadOnly: this Rectangle is read only.
+   at iTextSharp.text.RectangleReadOnly.ThrowReadOnlyError()
+   at Business.Facede.Query.GenerateSportsCertificate.ExecuteQueryWith(Student st) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\GenerateSportsCertificate.cs:line 24
+   at Api.Controllers.SportsCertificateController.Get() in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\SportsCertificateController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-11-131011192974800343
+
+ProcessId: 5196
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:4240
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2/28/2016 8:02:14 AM
+
+Message: System.IO.DirectoryNotFoundException: Could not find a part of the path 'E://Backups\diploma\28-Feb-2016'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   at System.IO.Directory.InternalCreateDirectoryHelper(String path, Boolean checkHost)
+   at Business.Facede.TakeDatabaseBackupCommand.TakeBackup(String application) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\TakeDatabaseBackupCommand.cs:line 29
+   at Api.Controllers.LogoutController.Get(String application) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\LogoutController.cs:line 17
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-12-131011196192788673
+
+ProcessId: 5196
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6120
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 3/2/2016 6:09:48 PM
+
+Message: MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'shreedhar' using method 'mysql_native_password' failed with message: Access denied for user 'shreedhar'@'localhost' to database 'das' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'shreedhar'@'localhost' to database 'das'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetServerVersion()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetSchemaProvider()
+   at Simple.Data.Ado.Schema.DatabaseSchema.<>c__DisplayClass3.<Get>b__2(String sp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.Ado.Schema.DatabaseSchema.Get(IConnectionProvider connectionProvider, ProviderHelper providerHelper)
+   at Simple.Data.Ado.AdoAdapter.OnSetup()
+   at Simple.Data.Adapter.Setup(IEnumerable`1 settings)
+   at Simple.Data.AdapterFactory.DoCreate(String adapterName, IEnumerable`1 settings)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.CachingAdapterFactory.Create(String adapterName, IEnumerable`1 settings)
+   at Simple.Data.DatabaseOpener.OpenDefaultMethod()
+   at Simple.Data.DatabaseOpener.OpenDefault()
+   at Business.Facede.Query.LoginQuery.ExecuteQueryWith(Login input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\LoginQuery.cs:line 15
+   at Api.Controllers.LoginController.Post(Login login) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\LoginController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: SHREEDHAR-PC
+
+App Domain: /LM/W3SVC/4/ROOT-1-131014156633987090
+
+ProcessId: 5708
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7024
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/2/2016 12:49:17 PM
+
+Message: System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at Simple.Data.Ado.DataRecordExtensions.CreateDictionaryIndex(IDataRecord reader)
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.CreateIndexIfNecessary()
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Business.Facede.Library.Query.BookSearchQuery.ExecuteQueryWith(BookSearchCriteria input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\BookSearchQuery.cs:line 42
+   at Api.Controllers.Library.SearchBookController.Get(BookSearchCriteria searchCriteria) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\SearchBookController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-4-131040749480776820
+
+ProcessId: 4456
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7304
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/2/2016 12:49:24 PM
+
+Message: System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at Simple.Data.Ado.DataRecordExtensions.CreateDictionaryIndex(IDataRecord reader)
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.CreateIndexIfNecessary()
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Business.Facede.Library.Query.BookSearchQuery.ExecuteQueryWith(BookSearchCriteria input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\BookSearchQuery.cs:line 42
+   at Api.Controllers.Library.SearchBookController.Get(BookSearchCriteria searchCriteria) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\SearchBookController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-4-131040749480776820
+
+ProcessId: 4456
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7304
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/2/2016 5:09:10 PM
+
+Message: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Business.Facede.Library.Query.StudentSearchQuery.ExecuteQueryWith(BookSearchCriteria input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\StudentSearchQuery.cs:line 17
+   at Api.Controllers.Library.StudentSearchController.Get(BookSearchCriteria searchCriteria) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\StudentSearchController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131040905398184383
+
+ProcessId: 3296
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:204
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/2/2016 5:09:44 PM
+
+Message: System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at Simple.Data.ObjectReference.TryInvoke(InvokeBinder binder, Object[] args, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Business.Facede.Library.Query.StudentSearchQuery.ExecuteQueryWith(BookSearchCriteria input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\StudentSearchQuery.cs:line 19
+   at Api.Controllers.Library.StudentSearchController.Get(BookSearchCriteria searchCriteria) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\StudentSearchController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131040905398184383
+
+ProcessId: 3296
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:8100
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/2/2016 5:11:08 PM
+
+Message: System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at Simple.Data.ObjectReference.TryInvoke(InvokeBinder binder, Object[] args, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Business.Facede.Library.Query.StudentSearchQuery.ExecuteQueryWith(BookSearchCriteria input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\StudentSearchQuery.cs:line 19
+   at Api.Controllers.Library.StudentSearchController.Get(BookSearchCriteria searchCriteria) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\StudentSearchController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-2-131040906602530640
+
+ProcessId: 3296
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7292
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/2/2016 5:12:34 PM
+
+Message: System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at Simple.Data.ObjectReference.TryInvoke(InvokeBinder binder, Object[] args, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at CallSite.Target(Closure , CallSite , Object )
+   at Business.Facede.Library.Query.StudentSearchQuery.ExecuteQueryWith(BookSearchCriteria input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\StudentSearchQuery.cs:line 19
+   at Api.Controllers.Library.StudentSearchController.Get(BookSearchCriteria searchCriteria) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\StudentSearchController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-2-131040906602530640
+
+ProcessId: 3296
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3252
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/2/2016 5:15:33 PM
+
+Message: System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at Simple.Data.ObjectReference.TryInvoke(InvokeBinder binder, Object[] args, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Business.Facede.Library.Query.StudentSearchQuery.ExecuteQueryWith(BookSearchCriteria input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\StudentSearchQuery.cs:line 19
+   at Api.Controllers.Library.StudentSearchController.Get(BookSearchCriteria searchCriteria) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\StudentSearchController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-3-131040909255649827
+
+ProcessId: 3296
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5792
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 7:44:35 AM
+
+Message: MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'shreedhar' using method 'mysql_native_password' failed with message: Reading from the stream has failed. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine. ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at MySql.Data.Common.MyNetworkStream.HandleOrRethrowException(Exception e)
+   at MySql.Data.Common.MyNetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetServerVersion()
+   at Simple.Data.Mysql.MysqlConnectionProvider.get_IsMySql5()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetSchemaProvider()
+   at Simple.Data.Ado.Schema.DatabaseSchema.<>c__DisplayClass3.<Get>b__2(String sp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.Ado.AdoAdapter.OnSetup()
+   at Simple.Data.Adapter.Setup(IEnumerable`1 settings)
+   at Simple.Data.AdapterFactory.DoCreate(String adapterName, IEnumerable`1 settings)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.CachingAdapterFactory.Create(String adapterName, IEnumerable`1 settings)
+   at Simple.Data.DatabaseOpener.OpenDefaultMethod()
+   at Business.Facede.Query.LoginQuery.ExecuteQueryWith(Login input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\LoginQuery.cs:line 15
+   at Api.Controllers.LoginController.Post(Login login) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\LoginController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131041430220369200
+
+ProcessId: 5616
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5992
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 8:26:45 AM
+
+Message: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Api.Controllers.Library.IssueBookController.Post(IssueBook book) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\IssueBookController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131041454674292613
+
+ProcessId: 4668
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3992
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 10:52:52 AM
+
+Message: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot invoke a non-delegate type
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Business.Facede.Library.Query.ReturnBookQuery.ExecuteQueryWith(Int32 input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\ReturnBookQuery.cs:line 38
+   at Api.Controllers.Library.BookReturnController.Get(Int32 studentId) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\BookReturnController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131041543468305784
+
+ProcessId: 8492
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2604
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 10:54:12 AM
+
+Message: Simple.Data.UnresolvableObjectException: Column 'books.BOOKS_ID' not found. ---> Simple.Data.UnresolvableObjectException: Column 'BOOKS_ID' not found.
+   at Simple.Data.Ado.Schema.ColumnCollection.Find(String columnName)
+   at Simple.Data.Ado.Schema.Table.FindColumn(String columnName)
+   --- End of inner exception stack trace ---
+   at Simple.Data.Ado.Schema.Table.FindColumn(String columnName)
+   at Simple.Data.Ado.SimpleReferenceFormatter.TryFormatAsObjectReference(ObjectReference objectReference, Boolean excludeAlias)
+   at Simple.Data.Ado.SimpleReferenceFormatter.FormatColumnClause(SimpleReference reference, Boolean excludeAlias)
+   at Simple.Data.Ado.ExpressionFormatter.FormatObject(Object value, Object otherOperand)
+   at Simple.Data.Ado.ExpressionFormatterBase.FormatAsComparison(SimpleExpression expression, String op)
+   at Simple.Data.Ado.ExpressionFormatterBase.Format(SimpleExpression expression)
+   at Simple.Data.Ado.Joiner.<GetJoinClauses>d__a.MoveNext()
+   at System.Linq.Enumerable.<ConcatIterator>d__58`1.MoveNext()
+   at System.Linq.Enumerable.<ConcatIterator>d__58`1.MoveNext()
+   at System.Linq.Enumerable.<ConcatIterator>d__58`1.MoveNext()
+   at System.Linq.Enumerable.<ConcatIterator>d__58`1.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.<DistinctIterator>d__63`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Simple.Data.Ado.QueryBuilderBase.HandleJoins()
+   at Simple.Data.Ado.QueryBuilder.Build(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.GetQueryCommandBuilders(SimpleQuery& query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.RunQuery(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.SimpleQuery.Run()
+   at Simple.Data.SimpleQuery.Cast[T]()
+   at Simple.Data.SimpleQuery.ToList[T]()
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Business.Facede.Library.Query.ReturnBookQuery.ExecuteQueryWith(Int32 input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\ReturnBookQuery.cs:line 38
+   at Api.Controllers.Library.BookReturnController.Get(Int32 studentId) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\BookReturnController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-2-131041544432038948
+
+ProcessId: 8492
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5952
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 11:09:54 AM
+
+Message: Simple.Data.UnresolvableObjectException: Column 'book_borrow.BRANCH_ID' not found. ---> Simple.Data.UnresolvableObjectException: Column 'BRANCH_ID' not found.
+   at Simple.Data.Ado.Schema.ColumnCollection.Find(String columnName)
+   at Simple.Data.Ado.Schema.Table.FindColumn(String columnName)
+   --- End of inner exception stack trace ---
+   at Simple.Data.Ado.Schema.Table.FindColumn(String columnName)
+   at Simple.Data.Ado.SimpleReferenceFormatter.TryFormatAsObjectReference(ObjectReference objectReference, Boolean excludeAlias)
+   at Simple.Data.Ado.SimpleReferenceFormatter.FormatColumnClause(SimpleReference reference, Boolean excludeAlias)
+   at Simple.Data.Ado.ExpressionFormatter.FormatObject(Object value, Object otherOperand)
+   at Simple.Data.Ado.ExpressionFormatterBase.FormatAsComparison(SimpleExpression expression, String op)
+   at Simple.Data.Ado.ExpressionFormatterBase.Format(SimpleExpression expression)
+   at Simple.Data.Ado.Joiner.<GetJoinClauses>d__a.MoveNext()
+   at System.Linq.Enumerable.<ConcatIterator>d__58`1.MoveNext()
+   at System.Linq.Enumerable.<ConcatIterator>d__58`1.MoveNext()
+   at System.Linq.Enumerable.<ConcatIterator>d__58`1.MoveNext()
+   at System.Linq.Enumerable.<ConcatIterator>d__58`1.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.<DistinctIterator>d__63`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Simple.Data.Ado.QueryBuilderBase.HandleJoins()
+   at Simple.Data.Ado.QueryBuilder.Build(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.GetQueryCommandBuilders(SimpleQuery& query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.Ado.AdoAdapterQueryRunner.RunQuery(SimpleQuery query, IEnumerable`1& unhandledClauses)
+   at Simple.Data.SimpleQuery.Run()
+   at Simple.Data.SimpleQuery.Cast[T]()
+   at Simple.Data.SimpleQuery.ToList[T]()
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Business.Facede.Library.Query.ReturnBookQuery.ExecuteQueryWith(Int32 input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\ReturnBookQuery.cs:line 50
+   at Api.Controllers.Library.BookReturnController.Get(Int32 studentId) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\BookReturnController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-6-131041553862342868
+
+ProcessId: 8492
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3672
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 1:54:06 PM
+
+Message: Simple.Data.BadExpressionException: Cannot assign values to object references.
+   at Simple.Data.ObjectReference.TrySetMember(SetMemberBinder binder, Object value)
+   at CallSite.Target(Closure , CallSite , Object , Double )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at Business.Facede.Library.Command.UpdateBookReturnCommandHandler.Execute(ReturnBook command) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Command\UpdateBookReturnCommandHandler.cs:line 16
+   at Api.Controllers.Library.BookReturnController.Put(ReturnBook book) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\BookReturnController.cs:line 43
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-3-131041652409107247
+
+ProcessId: 6100
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7520
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 1:57:52 PM
+
+Message: Simple.Data.BadExpressionException: Cannot assign values to object references.
+   at Simple.Data.ObjectReference.TrySetMember(SetMemberBinder binder, Object value)
+   at CallSite.Target(Closure , CallSite , Object , Double )
+   at Business.Facede.Library.Command.UpdateBookReturnCommandHandler.Execute(ReturnBook command) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Command\UpdateBookReturnCommandHandler.cs:line 16
+   at Api.Controllers.Library.BookReturnController.Put(ReturnBook book) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\BookReturnController.cs:line 43
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-3-131041652409107247
+
+ProcessId: 6100
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7520
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 1:58:56 PM
+
+Message: System.ArgumentException: Incorrect number of arguments to Update method.
+   at Simple.Data.Commands.UpdateCommand.Execute(DataStrategy dataStrategy, DynamicTable table, InvokeMemberBinder binder, Object[] args)
+   at Simple.Data.DynamicTable.TryInvokeMember(InvokeMemberBinder binder, Object[] args, Object& result)
+   at Simple.Data.ObjectReference.TryInvokeMember(InvokeMemberBinder binder, Object[] args, Object& result)
+   at CallSite.Target(Closure , CallSite , Object , Double , String , Int32 )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute4[T0,T1,T2,T3,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3)
+   at Business.Facede.Library.Command.UpdateBookReturnCommandHandler.Execute(ReturnBook command) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Command\UpdateBookReturnCommandHandler.cs:line 16
+   at Api.Controllers.Library.BookReturnController.Put(ReturnBook book) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\BookReturnController.cs:line 43
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-4-131041655258303176
+
+ProcessId: 6100
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5736
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 2:00:48 PM
+
+Message: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Simple.Data.MethodNameParser.<>c__DisplayClass4.<ParseFromMethodName>b__3(String s)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at Simple.Data.Commands.UpdateByCommand.Execute(DataStrategy dataStrategy, DynamicTable table, InvokeMemberBinder binder, Object[] args)
+   at Simple.Data.DynamicTable.TryInvokeMember(InvokeMemberBinder binder, Object[] args, Object& result)
+   at Simple.Data.ObjectReference.TryInvokeMember(InvokeMemberBinder binder, Object[] args, Object& result)
+   at CallSite.Target(Closure , CallSite , Object , Double , String , Int32 )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute4[T0,T1,T2,T3,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3)
+   at Business.Facede.Library.Command.UpdateBookReturnCommandHandler.Execute(ReturnBook command) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Command\UpdateBookReturnCommandHandler.cs:line 16
+   at Api.Controllers.Library.BookReturnController.Put(ReturnBook book) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\BookReturnController.cs:line 43
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-1-131041656382453548
+
+ProcessId: 6480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7108
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 2:11:43 PM
+
+Message: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Simple.Data.MethodNameParser.<>c__DisplayClass4.<ParseFromMethodName>b__3(String s)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at Simple.Data.Commands.UpdateByCommand.Execute(DataStrategy dataStrategy, DynamicTable table, InvokeMemberBinder binder, Object[] args)
+   at Simple.Data.DynamicTable.TryInvokeMember(InvokeMemberBinder binder, Object[] args, Object& result)
+   at Simple.Data.ObjectReference.TryInvokeMember(InvokeMemberBinder binder, Object[] args, Object& result)
+   at CallSite.Target(Closure , CallSite , Object , Double , String , Int32 )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute4[T0,T1,T2,T3,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3)
+   at Business.Facede.Library.Command.UpdateBookReturnCommandHandler.Execute(ReturnBook command) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Command\UpdateBookReturnCommandHandler.cs:line 16
+   at Api.Controllers.Library.BookReturnController.Put(ReturnBook book) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\BookReturnController.cs:line 43
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-2-131041659148262813
+
+ProcessId: 6480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:4632
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 2:18:36 PM
+
+Message: System.IO.DirectoryNotFoundException: Could not find a part of the path 'E://Backups\library\03-Apr-2016'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   at System.IO.Directory.InternalCreateDirectoryHelper(String path, Boolean checkHost)
+   at Business.Facede.TakeDatabaseBackupCommand.TakeBackup(String application) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\TakeDatabaseBackupCommand.cs:line 29
+   at Api.Controllers.LogoutController.Get(String application) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\LogoutController.cs:line 17
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-3-131041663796592311
+
+ProcessId: 6480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7260
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/3/2016 3:39:46 PM
+
+Message: System.IO.DirectoryNotFoundException: Could not find a part of the path 'E://Backups\library\03-Apr-2016'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   at System.IO.Directory.InternalCreateDirectoryHelper(String path, Boolean checkHost)
+   at Business.Facede.TakeDatabaseBackupCommand.TakeBackup(String application) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\TakeDatabaseBackupCommand.cs:line 29
+   at Api.Controllers.LogoutController.Get(String application) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\LogoutController.cs:line 17
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-5-131041692897733203
+
+ProcessId: 6480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2336
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/16/2016 5:10:51 AM
+
+Message: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.List<Business.Facede.Models.StudentBookBorrowStatus>' does not contain a definition for 'FirstOrDefault'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Business.Facede.Library.Query.BookLimitQuery.ExecuteQueryWith(IssueBook input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\BookLimitQuery.cs:line 18
+   at Api.Controllers.Library.IssueBookController.Post(IssueBook book) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\IssueBookController.cs:line 30
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.<>c__DisplayClass5.<ExecuteAsync>b__4()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-2-131052565804266738
+
+ProcessId: 4668
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:4080
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/16/2016 5:12:47 AM
+
+Message: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.List<Business.Facede.Models.StudentBookBorrowStatus>' does not contain a definition for 'BookBorrowLimit'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Business.Facede.Library.Query.BookLimitQuery.ExecuteQueryWith(IssueBook input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\BookLimitQuery.cs:line 20
+   at Api.Controllers.Library.IssueBookController.Post(IssueBook book) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\IssueBookController.cs:line 30
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.<>c__DisplayClass5.<ExecuteAsync>b__4()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-3-131052571093032441
+
+ProcessId: 4668
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:4080
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/16/2016 5:14:55 AM
+
+Message: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Non-invocable member 'System.Collections.Generic.List<Business.Facede.Models.ReturnBook>.Count' cannot be used like a method.
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Business.Facede.Library.Query.BookLimitQuery.ExecuteQueryWith(IssueBook input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Library\Query\BookLimitQuery.cs:line 26
+   at Api.Controllers.Library.IssueBookController.Post(IssueBook book) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Library\IssueBookController.cs:line 30
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.<>c__DisplayClass5.<ExecuteAsync>b__4()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-IDJSPF9
+
+App Domain: /LM/W3SVC/4/ROOT-4-131052572145372060
+
+ProcessId: 4668
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:4080
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 4/29/2017 7:04:15 PM
+
+Message: MySql.Data.MySqlClient.MySqlException (0x80004005): You must reset your password using ALTER USER statement before executing this statement.
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetServerVersion()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetSchemaProvider()
+   at Simple.Data.Ado.Schema.DatabaseSchema.<>c__DisplayClass3.<Get>b__2(String sp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.Ado.Schema.DatabaseSchema.Get(IConnectionProvider connectionProvider, ProviderHelper providerHelper)
+   at Simple.Data.Ado.AdoAdapter.OnSetup()
+   at Simple.Data.Adapter.Setup(IEnumerable`1 settings)
+   at Simple.Data.AdapterFactory.DoCreate(String adapterName, IEnumerable`1 settings)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.CachingAdapterFactory.Create(String adapterName, IEnumerable`1 settings)
+   at Simple.Data.DatabaseOpener.OpenDefaultMethod()
+   at Simple.Data.DatabaseOpener.OpenDefault()
+   at Business.Facede.Query.LoginQuery.ExecuteQueryWith(Login input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\LoginQuery.cs:line 15
+   at Api.Controllers.LoginController.Post(Login login) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\LoginController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: SHREEDHAR-PC
+
+App Domain: /LM/W3SVC/4/ROOT-1-131379661991994677
+
+ProcessId: 4704
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5164
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 9/21/2017 5:53:09 PM
+
+Message: MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'shreedhar' using method 'mysql_native_password' failed with message: Access denied for user 'shreedhar'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'shreedhar'@'localhost' (using password: YES)
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetServerVersion()
+   at Simple.Data.Mysql.MysqlConnectionProvider.get_IsMySql5()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetSchemaProvider()
+   at Simple.Data.Ado.Schema.DatabaseSchema.<>c__DisplayClass3.<Get>b__2(String sp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.Ado.AdoAdapter.OnSetup()
+   at Simple.Data.Adapter.Setup(IEnumerable`1 settings)
+   at Simple.Data.AdapterFactory.DoCreate(String adapterName, IEnumerable`1 settings)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.CachingAdapterFactory.Create(String adapterName, IEnumerable`1 settings)
+   at Simple.Data.DatabaseOpener.OpenDefaultMethod()
+   at Business.Facede.Query.LoginQuery.ExecuteQueryWith(Login input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\LoginQuery.cs:line 15
+   at Api.Controllers.LoginController.Post(Login login) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\LoginController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-SHREEDH
+
+App Domain: /LM/W3SVC/4/ROOT-1-131504898028773649
+
+ProcessId: 4316
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3032
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 9/21/2017 5:53:22 PM
+
+Message: MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'shreedhar' using method 'mysql_native_password' failed with message: Access denied for user 'shreedhar'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'shreedhar'@'localhost' (using password: YES)
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetServerVersion()
+   at Simple.Data.Mysql.MysqlConnectionProvider.get_IsMySql5()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetSchemaProvider()
+   at Simple.Data.Ado.Schema.DatabaseSchema.<>c__DisplayClass3.<Get>b__2(String sp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.Ado.AdoAdapter.OnSetup()
+   at Simple.Data.Adapter.Setup(IEnumerable`1 settings)
+   at Simple.Data.AdapterFactory.DoCreate(String adapterName, IEnumerable`1 settings)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.CachingAdapterFactory.Create(String adapterName, IEnumerable`1 settings)
+   at Simple.Data.DatabaseOpener.OpenDefaultMethod()
+   at Business.Facede.Query.LoginQuery.ExecuteQueryWith(Login input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\LoginQuery.cs:line 15
+   at Api.Controllers.LoginController.Post(Login login) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\LoginController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-SHREEDH
+
+App Domain: /LM/W3SVC/4/ROOT-1-131504898028773649
+
+ProcessId: 4316
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7396
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 9/21/2017 5:53:24 PM
+
+Message: MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'shreedhar' using method 'mysql_native_password' failed with message: Access denied for user 'shreedhar'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'shreedhar'@'localhost' (using password: YES)
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetServerVersion()
+   at Simple.Data.Mysql.MysqlConnectionProvider.get_IsMySql5()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetSchemaProvider()
+   at Simple.Data.Ado.Schema.DatabaseSchema.<>c__DisplayClass3.<Get>b__2(String sp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.Ado.AdoAdapter.OnSetup()
+   at Simple.Data.Adapter.Setup(IEnumerable`1 settings)
+   at Simple.Data.AdapterFactory.DoCreate(String adapterName, IEnumerable`1 settings)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.CachingAdapterFactory.Create(String adapterName, IEnumerable`1 settings)
+   at Simple.Data.DatabaseOpener.OpenDefaultMethod()
+   at Business.Facede.Query.LoginQuery.ExecuteQueryWith(Login input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\LoginQuery.cs:line 15
+   at Api.Controllers.LoginController.Post(Login login) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\LoginController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-SHREEDH
+
+App Domain: /LM/W3SVC/4/ROOT-1-131504898028773649
+
+ProcessId: 4316
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7496
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 9/23/2017 5:41:56 AM
+
+Message: MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'shreedhar' using method 'mysql_native_password' failed with message: Access denied for user 'shreedhar'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'shreedhar'@'localhost' (using password: YES)
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetServerVersion()
+   at Simple.Data.Mysql.MysqlConnectionProvider.get_IsMySql5()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetSchemaProvider()
+   at Simple.Data.Ado.Schema.DatabaseSchema.<>c__DisplayClass3.<Get>b__2(String sp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.Ado.AdoAdapter.OnSetup()
+   at Simple.Data.Adapter.Setup(IEnumerable`1 settings)
+   at Simple.Data.AdapterFactory.DoCreate(String adapterName, IEnumerable`1 settings)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.CachingAdapterFactory.Create(String adapterName, IEnumerable`1 settings)
+   at Simple.Data.DatabaseOpener.OpenDefaultMethod()
+   at Business.Facede.Query.LoginQuery.ExecuteQueryWith(Login input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\LoginQuery.cs:line 15
+   at Api.Controllers.LoginController.Post(Login login) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\LoginController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-SHREEDH
+
+App Domain: /LM/W3SVC/4/ROOT-1-131506187489563973
+
+ProcessId: 7240
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5312
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 9/23/2017 5:43:30 AM
+
+Message: MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'shreedhar' using method 'mysql_native_password' failed with message: Access denied for user 'shreedhar'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'shreedhar'@'localhost' (using password: YES)
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetServerVersion()
+   at Simple.Data.Mysql.MysqlConnectionProvider.get_IsMySql5()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetSchemaProvider()
+   at Simple.Data.Ado.Schema.DatabaseSchema.<>c__DisplayClass3.<Get>b__2(String sp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.Ado.AdoAdapter.OnSetup()
+   at Simple.Data.Adapter.Setup(IEnumerable`1 settings)
+   at Simple.Data.AdapterFactory.DoCreate(String adapterName, IEnumerable`1 settings)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.CachingAdapterFactory.Create(String adapterName, IEnumerable`1 settings)
+   at Simple.Data.DatabaseOpener.OpenDefaultMethod()
+   at Business.Facede.Query.LoginQuery.ExecuteQueryWith(Login input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\LoginQuery.cs:line 15
+   at Api.Controllers.LoginController.Post(Login login) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\LoginController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-SHREEDH
+
+App Domain: /LM/W3SVC/4/ROOT-1-131506187489563973
+
+ProcessId: 7240
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6816
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 9/23/2017 5:49:41 AM
+
+Message: MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'shreedhar' using method 'mysql_native_password' failed with message: Access denied for user 'shreedhar'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'shreedhar'@'localhost' (using password: YES)
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetServerVersion()
+   at Simple.Data.Mysql.MysqlConnectionProvider.get_IsMySql5()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetSchemaProvider()
+   at Simple.Data.Ado.Schema.DatabaseSchema.<>c__DisplayClass3.<Get>b__2(String sp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.Ado.AdoAdapter.OnSetup()
+   at Simple.Data.Adapter.Setup(IEnumerable`1 settings)
+   at Simple.Data.AdapterFactory.DoCreate(String adapterName, IEnumerable`1 settings)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.CachingAdapterFactory.Create(String adapterName, IEnumerable`1 settings)
+   at Simple.Data.DatabaseOpener.OpenDefaultMethod()
+   at Business.Facede.Query.LoginQuery.ExecuteQueryWith(Login input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\LoginQuery.cs:line 15
+   at Api.Controllers.LoginController.Post(Login login) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\LoginController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-SHREEDH
+
+App Domain: /LM/W3SVC/4/ROOT-1-131506187489563973
+
+ProcessId: 7240
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2088
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 9/23/2017 5:50:51 AM
+
+Message: MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'shreedhar' using method 'mysql_native_password' failed with message: Access denied for user 'shreedhar'@'localhost' (using password: YES) ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Access denied for user 'shreedhar'@'localhost' (using password: YES)
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetServerVersion()
+   at Simple.Data.Mysql.MysqlConnectionProvider.get_IsMySql5()
+   at Simple.Data.Mysql.MysqlConnectionProvider.GetSchemaProvider()
+   at Simple.Data.Ado.Schema.DatabaseSchema.<>c__DisplayClass3.<Get>b__2(String sp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.Ado.AdoAdapter.OnSetup()
+   at Simple.Data.Adapter.Setup(IEnumerable`1 settings)
+   at Simple.Data.AdapterFactory.DoCreate(String adapterName, IEnumerable`1 settings)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Simple.Data.CachingAdapterFactory.Create(String adapterName, IEnumerable`1 settings)
+   at Simple.Data.DatabaseOpener.OpenDefaultMethod()
+   at Business.Facede.Query.LoginQuery.ExecuteQueryWith(Login input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\LoginQuery.cs:line 15
+   at Api.Controllers.LoginController.Post(Login login) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\LoginController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-SHREEDH
+
+App Domain: /LM/W3SVC/4/ROOT-1-131506187489563973
+
+ProcessId: 7240
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:8124
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 9/23/2017 6:16:13 AM
+
+Message: System.OverflowException: Value was either too large or too small for an Int32.
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at MySql.Data.Types.MySqlInt32.MySql.Data.Types.IMySqlValue.WriteValue(MySqlPacket packet, Boolean binary, Object val, Int32 length)
+   at MySql.Data.MySqlClient.MySqlParameter.Serialize(MySqlPacket packet, Boolean binary, MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   at MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   at MySql.Data.MySqlClient.Statement.BindParameters()
+   at MySql.Data.MySqlClient.PreparableStatement.Execute()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Simple.Data.Ado.DbCommandExtensions.TryExecuteReader(IDbCommand command)
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.ExecuteReader()
+   at Simple.Data.Ado.DataReaderEnumerable.DataReaderEnumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Business.Facede.Query.GetStudentQuery.ExecuteQueryWith(String input) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Business.Facede\Diploma\Query\GetStudentQuery.cs:line 18
+   at Api.Controllers.StudentController.Get(String studentId) in g:\projects\Projects\Arun projects\CollegeAccountingSystem\Api\Controllers\Diploma\StudentController.cs:line 50
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Category: Error
+
+Priority: -1
+
+EventId: 0
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-SHREEDH
+
+App Domain: /LM/W3SVC/4/ROOT-1-131506187489563973
+
+ProcessId: 7240
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3456
+
+Extended Properties: 
+----------------------------------------

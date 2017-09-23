@@ -1,0 +1,32 @@
+﻿<form class="ui form" name="criteria1">
+    <div class="four fields margin-top-35">
+        <div class="field">
+            <label>Branch<span class="mandatory">*</span></label>
+            <select class="ui search dropdown" data-ng-options="branch.Id as branch.Name for branch in Model.Branches" name="branch1"
+                required="required" data-ng-model="Model.Student.BranchId">
+            </select>
+            <div class="red bold" data-ng-show="Model.Student.BranchId == 0 && criteria1.branch1.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BranchMandatory"></span></div>
+        </div>
+        <div class="field">
+            <label>Quota<span class="mandatory">*</span></label>
+            <select class="ui search dropdown" data-ng-model="Model.Student.Quota" name="quota1" required>
+                <option value="">----- Please Select ------</option>
+                <option>Government</option>
+                <option>Management</option>
+            </select>
+            <div class="red bold" data-ng-show="criteria1.quota1.$invalid && criteria1.quota1.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.QuotaMandatory"></span></div>
+        </div>
+        <div class="field">
+            <label>Year of admission<span class="mandatory">*</span></label>
+            <select class="ui search dropdown" data-ng-options="year as year for year in Model.Years" name="year1"
+                required="required" data-ng-model="Model.Student.AdmissionYear">
+            </select>
+            <div class="red bold" data-ng-show="Model.Student.AdmissionYear == '----- Please Select ------' && criteria1.year1.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.YearMandatory"></span></div>
+        </div>
+        <div class="field margin-top-27">
+
+            <div class="ui yellow button" data-ng-click="Model.SearchStudents(1)" data-ng-if="criteria1.$valid && Model.Student.BranchId != 0 && Model.Student.AdmissionYear != '----- Please Select ------'">Submit</div>
+            <div class="ui  button" data-ng-click="Model.Clear('criteria1')">Clear</div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,135 @@
+<section data-ng-show="StudentProfileTemplate.length == 0">
+
+    <section>
+        <div class="html ui top attached segment">
+            <div class="ui form margin-top-35">
+
+                <ul class="nav nav-tabs">
+                    <li data-ng-class="{true:'active', false:''}[Model.CurrentTab == 0]"><a href="" data-ng-click="Model.ChangeTab(0)">Criteria 1</a></li>
+                    <li data-ng-class="{true:'active', false:''}[Model.CurrentTab == 1]"><a href="" data-ng-click="Model.ChangeTab(1)">Criteria 2</a></li>
+                    <li data-ng-class="{true:'active', false:''}[Model.CurrentTab == 2]"><a href="" data-ng-click="Model.ChangeTab(2)">Criteria 3</a></li>
+                </ul>
+
+                <div data-ng-include="Model.CriteriaTemplate"></div>
+            </div>
+            <div class="ui top attached label" style="font-size: large; font-weight: bold">Select Criteria</div>
+        </div>
+    </section>
+
+    <div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="Model.ShowLoader">
+        <div class="ui active dimmer">
+            <div class="ui large text loader">Loading</div>
+        </div>
+    </div>
+
+    <div class="html ui top attached segment" data-ng-show="Model.ShowMainTemplate">
+        <form class="ui form">
+            <div id="noStudentsFound" class=" margin-top-35">
+                <div class="ui info  message" data-ng-show="Model.NoStudentsFound">
+                    <div class="header">
+                        No student records found for selected criteria. Please check your criteria and try again.
+                    </div>
+                </div>
+            </div>
+
+            <table class="ui sortable celled table" data-ng-show="Model.Students.length != 0">
+                <thead>
+                    <tr>
+                        <th>Student Id</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Contact Number</th>
+                        <th>Seat Quota</th>
+                        <th>Branch</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="pointer student_card" data-ng-repeat="student in Model.Students" data-ng-click="Model.ShowStudentProfile(student)">
+                        <td data-ng-bind="student.Id"></td>
+                        <td data-ng-bind="student.Name"></td>
+                        <td data-ng-bind="student.Gender"></td>
+                        <td data-ng-bind="student.ContactNumber"></td>
+                        <td data-ng-bind="student.Quota"></td>
+                        <td data-ng-bind="student.BranchName"></td>
+                        <td data-ng-bind="student.Address"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--  <div class="ui special cards margin-top-35" data-ng-show="StudentProfileTemplate.length == 0">
+                <div class="card student_card" data-ng-repeat="student in Model.Students" onclick="trigger()">
+                    <div class="content">
+                        <div class="ui items">
+                            <div class="item">
+                                <a class="ui tiny image">
+                                    <img data-ng-src="{{student.ImageUrl}}" class=" ui avatar image">
+                                </a>
+                                <div class="content">
+                                    <a class="header margin-top-10" data-ng-bind="student.Name"></a>
+                                    <div class="description">
+                                        <p data-ng-bind="student.Address"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <label>Student Id</label>
+                            </div>
+                            <div class="span6">
+                                <span data-ng-bind="student.Id"></span>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <label>Gender</label>
+                            </div>
+                            <div class="span6">
+                                <i data-ng-class="{true:'male icon',false:'female icon'}[student.Gender == 'Male']"></i>
+                                <span data-ng-bind="student.Gender"></span>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <label>Contact Number</label>
+                            </div>
+                            <div class="span6">
+                                <span data-ng-bind="student.ContactNumber"></span>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <label>Seat Quota</label>
+                            </div>
+                            <div class="span6">
+                                <span data-ng-bind="student.Quota"></span>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <label>Branch</label>
+                            </div>
+                            <div class="span6">
+                                <span data-ng-bind="student.BranchName"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="">
+                            <a class="pointer" data-ng-click="Model.ShowStudentProfile(student)"><i class="edit icon"></i>View Student Profile</a>
+                        </span>
+                    </div>
+                </div>
+            </div>-->
+        </form>
+        <div class="ui top attached label" style="font-size: large; font-weight: bold">Student Details</div>
+    </div>
+</section>
+
+<section id="studentprofile">
+    <div data-ng-include="StudentProfileTemplate"></div>
+</section>

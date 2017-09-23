@@ -1,0 +1,29 @@
+﻿<section>
+    <div class="html ui top attached segment">
+        <form class="ui form margin-top-35" name="receiptform">
+            <div class="three fields">
+                <div class="field row-fluid">
+                    <label>Student Id<span class="mandatory">*</span></label>
+                    <input type="text" class="span12" name="id" placeholder="Enter student id to search."
+                        required data-ng-model="Model.Id">
+                    <div class="red bold" data-ng-show="receiptform.id.$error.required && receiptform.id.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.StudentIdMandatory"></span></div>
+                </div>
+                <div class="field row-fluid">
+                    <label>Year<span class="mandatory">*</span></label>
+                    <select class="ui search dropdown" data-ng-model="Model.Year" required name="year1">
+                        <option value="">------ Please Select ------</option>
+                        <option value="1">First Year</option>
+                        <option value="2">Second Year</option>
+                        <option value="3">Third Year</option>
+                    </select>
+                    <div class="red bold" data-ng-show="receiptform.year1.$invalid && receiptform.year1.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BranchMandatory"></span></div>
+                </div>
+                <div class="field margin-top-27">
+                    <a class="ui yellow button" href="/api/paramedicalyear?id={{Model.Id}}&year={{Model.Year}}" data-ng-if="receiptform.$valid">Download</a>
+                    <div class="ui  button" data-ng-click="Model.Clear()">Clear</div>
+                </div>
+            </div>
+        </form>
+        <div class="ui top attached label" style="font-size: large; font-weight: bold">Download Student Fee Receipt</div>
+    </div>
+</section>

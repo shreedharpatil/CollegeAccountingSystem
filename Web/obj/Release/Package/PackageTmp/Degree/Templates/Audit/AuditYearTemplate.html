@@ -1,0 +1,12 @@
+﻿<section>
+    <ul class="nav nav-tabs">
+        <li data-ng-class="{true:'active', false:''}[Model.CurrentSubTab == 2]"><a href="" data-ng-click="Model.ChangeSubTab(2)">First Sem</a></li>
+        <li data-ng-class="{true:'active', false:''}[Model.CurrentSubTab == 3]"><a href="" data-ng-click="Model.ChangeSubTab(3)">Second Sem</a></li>
+        <li data-ng-class="{true:'active', false:''}[Model.CurrentSubTab == 4]"><a href="" data-ng-click="Model.ChangeSubTab(4)">Third Sem</a></li>
+        <li data-ng-class="{true:'active', false:''}[Model.CurrentSubTab == 7]"><a href="" data-ng-click="Model.ChangeSubTab(7)">Fourth Sem</a></li>
+        <li data-ng-class="{true:'active', false:''}[Model.CurrentSubTab == 8]"><a href="" data-ng-click="Model.ChangeSubTab(8)">Fifth Sem</a></li>
+        <li data-ng-class="{true:'active', false:''}[Model.CurrentSubTab == 9]"><a href="" data-ng-click="Model.ChangeSubTab(9)">Sixth Sem</a></li>
+    </ul>
+
+    <div data-ng-include="Model.AuditSubTemplate"></div>
+</section>

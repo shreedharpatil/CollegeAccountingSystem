@@ -1,0 +1,183 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Nivedita Polytechnic , yadagir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="shreedhar">
+    <!-- Bootstrap styles -->
+
+    <!-- Customize styles -->
+    <link href="../../Content/bootstrap.css" rel="stylesheet" />
+    <!--<link href="../../Content/bootstrap.min.css" rel="stylesheet" />-->
+    <link href="../../Content/font-awesome/css/style.css" rel="stylesheet" />
+    <script src="../../Scripts/scripts/jquery-1.9.1.min.js"></script>
+    <link href="../../Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="../../Scripts/scripts/semantic.min.css" rel="stylesheet" />
+    <script src="../../Scripts/scripts/semantic.min.js"></script>
+
+    <link href="../../Content/style.css" rel="stylesheet" />
+
+    <!--[if IE 7]>
+			<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
+		<![endif]-->
+
+    <!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <link href="../../Content/bootstrap.css" rel="stylesheet" />
+
+    <script src="../../Scripts/angular.min.js"></script>
+    <script src="../../Scripts/angular-route.min.js"></script>
+
+    <script src="../../Scripts/scripts/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="../../Scripts/scripts/ui-bootstrap-tpls-0.6.0.js"></script>
+
+    <script src="../../Scripts/scripts/dialogs.min.js"></script>
+    <script src="../../Scripts/scripts/underscore.js"></script>
+
+    <script src="../js/DASModule.js"></script>
+
+    <script src="../js/WarningMessage.js"></script>
+    <script src="Admin.js"></script>
+
+    <script src="../js/AdmissionService.js"></script>
+    <script src="../js/AdmissionController.js"></script>
+
+    <script src="../js/WarningMessageService.js"></script>
+    <script src="../js/StudentDetailsService.js"></script>
+    <script src="../js/StudentDetailsController.js"></script>
+
+    <script src="../js/QuotaManagementService.js"></script>
+    <script src="../js/QuotaManagementController.js"></script>
+    <script src="../js/EditFeeDetailsModalController.js"></script>
+
+    <script src="../js/StudentProfileService.js"></script>
+    <script src="../js/StudentProfileController.js"></script>
+
+    <script src="../js/AddFeeDetailsModalController.js"></script>
+
+    <script src="../js/AuditService.js"></script>
+    <script src="../js/AuditController.js"></script>
+    <script src="../js/FeeCollectionService.js"></script>
+    <script src="../js/FeeCollectionController.js"></script>
+    <script src="../js/CommonModalController.js"></script>
+    <script src="../js/DownloadReceiptController.js"></script>
+</head>
+<body data-ng-app="DAS" data-ng-controller="AdminController" class="bgimage">
+    <!-- Header section-->
+    <section>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="topNav">
+                <div class="container">
+                    <div class="head-bg">
+                        <h1 class="school_title center">Nivedita Polytechnic Yadgir <small>Karnataka</small></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================= -->
+        <div class="container">
+            <div id="gototop"></div>
+            <header id="header">
+                <div class="row">
+                    <div class="span4">
+                        <h1>
+                            <a class="logo" href=""><span>Nivedita Polytechnic , yadagir</span>
+                                <img src="../../assets/img/logo-bootstrap-shoping-cartn.png" alt="">
+                            </a>
+                        </h1>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Menus section starts-->
+            <div class="navbar margin-top-40">
+                <div class="navbar-inner">
+                    <div class="ui black big launch right attached fixed button" onclick="register()">
+                        <i class="content icon"></i>
+                        <span class="text">Menu</span>
+                    </div>
+                    <div class="ui  big launch right attached fixed button float-right" data-ng-click="Model.TakeBackup()">
+                        <i class="cloud upload icon"></i>
+                        <span>Backup</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="ui left pushable inline thin sidebar overlay vertical inverted labeled icon sidebar menu" id="modal">
+                <a class="item">
+                    <i class="home icon"></i>
+                    Home
+                </a>
+                <a class="item" href="#/admission">
+                    <i class="add user icon"></i>
+                    Admission
+                </a>
+                <a class="item" href="#/studentdetails">
+                    <i class="unhide icon"></i>
+                    View Details
+                </a>
+                <a class="item" href="#/quotamanagement">
+                    <i class="settings icon"></i>
+                    Quota Management
+                </a>
+                <a class="item" href="#/audit">
+                    <i class="block layout icon"></i>
+                    Audit
+                </a>
+                <a class="item" href="#/feescollection">
+                    <i class="rupee icon"></i>
+                    Fees Collection
+                </a>
+                <a class="item" href="#/receipt">
+                    <i class="money icon"></i>
+                    Receipt
+                </a>
+                <a class="item" data-ng-click="Model.Logout()">
+                    <i class="sign out icon"></i>
+                    Logout
+                </a>
+            </div>
+            <div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="Model.ShowLoader">
+                <div class="ui active dimmer">
+                    <div class="ui large text loader">Please Wait..</div>
+                </div>
+            </div>
+            <div data-ng-view=""></div>
+            <!-- footer -->
+            <div class="copyright">
+                <div class="container">
+
+                    <span>Copyright &copy; 2014<br>
+                        Nivedita Polytechnic Yadgir, Karnataka.</span>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+</body>
+</html>
+
+<script type="text/javascript">
+    function register() {
+
+        $('#modal')
+                .sidebar('setting', 'transition', 'overlay')
+                .sidebar('toggle');
+
+    }
+</script>
+

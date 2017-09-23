@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C5441DD-B2E8-4455-B6C3-02E8084A32D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Business.Facede</RootNamespace>
+    <AssemblyName>Business.Facede</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\ExternalDlls\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EnterpriseLibrary.Logging.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.Interception.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.Interception.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.9.6\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.6\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup">
+      <HintPath>..\packages\MySqlBackup.NET.2.0.8\lib\net45\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="NReco.PdfGenerator">
+      <HintPath>..\packages\NReco.PdfGenerator.1.1.6.0\lib\net20\NReco.PdfGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfFileWriter">
+      <HintPath>..\ExternalDlls\PdfFileWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.Data">
+      <HintPath>..\packages\Simple.Data.Core.0.19.0.0\lib\net40\Simple.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.Data.Ado">
+      <HintPath>..\packages\Simple.Data.Ado.0.19.0.0\lib\net40\Simple.Data.Ado.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.Data.Mysql">
+      <HintPath>..\packages\Simple.Data.Mysql.0.19.0.5\lib\net40\Simple.Data.Mysql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Degree\Command\AddBranchCommandHandler.cs" />
+    <Compile Include="Degree\Command\AddFeeDetailsCommandHandler.cs" />
+    <Compile Include="Degree\Command\RegisterStudentDetailsCommandHandler.cs" />
+    <Compile Include="Degree\Command\UpdateFeeDetailsCommandHandler.cs" />
+    <Compile Include="Degree\Command\UpdateImageUrlCommandHandler.cs" />
+    <Compile Include="Degree\Query\CheckSeatsAvailableQuery.cs" />
+    <Compile Include="Degree\Query\GenerateDegreeFeeReceiptQuery.cs" />
+    <Compile Include="Degree\Query\GetAllBranchesQuery.cs" />
+    <Compile Include="Degree\Query\GetAuditDetailsQuery.cs" />
+    <Compile Include="Degree\Query\GetStudentDetailsQuery.cs" />
+    <Compile Include="Degree\Query\GetStudentFeeDetailsQuery.cs" />
+    <Compile Include="Degree\Query\GetStudentIdQuery.cs" />
+    <Compile Include="Degree\Query\GetStudentQuery.cs" />
+    <Compile Include="Degree\Query\GetYearsQuery.cs" />
+    <Compile Include="Diploma\Query\GenerateSportsCertificate.cs" />
+    <Compile Include="Diploma\Query\GenerateStudyCertificateQuery.cs" />
+    <Compile Include="Library\Command\AddNewBookCategoryCommandHandler.cs" />
+    <Compile Include="Library\Command\AddNewBookCommandHandler.cs" />
+    <Compile Include="Library\Command\IssueBookCommandHandler.cs" />
+    <Compile Include="Library\Command\UpdateBookReturnCommandHandler.cs" />
+    <Compile Include="Library\Query\BookLimitQuery.cs" />
+    <Compile Include="Library\Query\BookSearchQuery.cs" />
+    <Compile Include="Library\Query\GetAllBookCategoriesQuery.cs" />
+    <Compile Include="Library\Query\GetAllBranchesQuery.cs" />
+    <Compile Include="Library\Query\ReturnBookQuery.cs" />
+    <Compile Include="Library\Query\StudentSearchQuery.cs" />
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\BookCategory.cs" />
+    <Compile Include="Models\BookSearchCriteria.cs" />
+    <Compile Include="Models\IssueBook.cs" />
+    <Compile Include="Models\ReturnBook.cs" />
+    <Compile Include="Models\StudentBookBorrowStatus.cs" />
+    <Compile Include="Pharmacy\Command\AddBranchCommandHandler.cs" />
+    <Compile Include="Pharmacy\Command\AddFeeDetailsCommandHandler.cs" />
+    <Compile Include="Pharmacy\Command\RegisterStudentDetailsCommandHandler.cs" />
+    <Compile Include="Pharmacy\Command\UpdateFeeDetailsCommandHandler.cs" />
+    <Compile Include="Pharmacy\Command\UpdateImageUrlCommandHandler.cs" />
+    <Compile Include="Pharmacy\Query\CheckSeatsAvailableQuery.cs" />
+    <Compile Include="Pharmacy\Query\GeneratePharmacyFeeReceiptQuery.cs" />
+    <Compile Include="Pharmacy\Query\GetAllBranchesQuery.cs" />
+    <Compile Include="Pharmacy\Query\GetAuditDetailsQuery.cs" />
+    <Compile Include="Pharmacy\Query\GetStudentDetailsQuery.cs" />
+    <Compile Include="Pharmacy\Query\GetStudentFeeDetailsQuery.cs" />
+    <Compile Include="Pharmacy\Query\GetStudentIdQuery.cs" />
+    <Compile Include="Pharmacy\Query\GetStudentQuery.cs" />
+    <Compile Include="Pharmacy\Query\GetYearsQuery.cs" />
+    <Compile Include="DateTimeUtilities.cs" />
+    <Compile Include="Diploma\Command\AddBranchCommandHandler.cs" />
+    <Compile Include="Diploma\Command\AddFeeDetailsCommandHandler.cs" />
+    <Compile Include="Diploma\Command\AddQuotaCommandHandler.cs" />
+    <Compile Include="Diploma\Command\RegisterStudentDetailsCommandHandler.cs" />
+    <Compile Include="Diploma\Command\UpdateFeeDetailsCommandHandler.cs" />
+    <Compile Include="Diploma\Command\UpdateImageUrlCommandHandler.cs" />
+    <Compile Include="ICommandHandler.cs" />
+    <Compile Include="ILogger.cs" />
+    <Compile Include="IQueryAll.cs" />
+    <Compile Include="IQueryFor.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Models\Audit.cs" />
+    <Compile Include="Models\AuditEnvelope.cs" />
+    <Compile Include="Models\AuditSummary.cs" />
+    <Compile Include="Models\Branch.cs" />
+    <Compile Include="Models\Fee.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Quota.cs" />
+    <Compile Include="Models\SearchCriteria.cs" />
+    <Compile Include="Nursing\Command\AddBranchCommandHandler.cs" />
+    <Compile Include="Nursing\Command\AddFeeDetailsCommandHandler.cs" />
+    <Compile Include="Nursing\Command\RegisterStudentDetailsCommandHandler.cs" />
+    <Compile Include="Nursing\Command\UpdateFeeDetailsCommandHandler.cs" />
+    <Compile Include="Nursing\Command\UpdateImageUrlCommandHandler.cs" />
+    <Compile Include="Nursing\Query\CheckSeatsAvailableQuery.cs" />
+    <Compile Include="Nursing\Query\GenerateNursingFeeReceiptQuery.cs" />
+    <Compile Include="Nursing\Query\GetAllBranchesQuery.cs" />
+    <Compile Include="Nursing\Query\GetAuditDetailsQuery.cs" />
+    <Compile Include="Nursing\Query\GetStudentDetailsQuery.cs" />
+    <Compile Include="Nursing\Query\GetStudentFeeDetailsQuery.cs" />
+    <Compile Include="Nursing\Query\GetStudentIdQuery.cs" />
+    <Compile Include="Nursing\Query\GetStudentQuery.cs" />
+    <Compile Include="Nursing\Query\GetYearsQuery.cs" />
+    <Compile Include="Paramedical\Command\AddBranchCommandHandler.cs" />
+    <Compile Include="Paramedical\Command\AddFeeDetailsCommandHandler.cs" />
+    <Compile Include="Paramedical\Command\RegisterStudentDetailsCommandHandler.cs" />
+    <Compile Include="Paramedical\Command\UpdateFeeDetailsCommandHandler.cs" />
+    <Compile Include="Paramedical\Command\UpdateImageUrlCommandHandler.cs" />
+    <Compile Include="Paramedical\Query\CheckSeatsAvailableQuery.cs" />
+    <Compile Include="Paramedical\Query\GenerateParamedicalFeeReceiptQuery.cs" />
+    <Compile Include="Paramedical\Query\GetAllBranchesQuery.cs" />
+    <Compile Include="Paramedical\Query\GetAuditDetailsQuery.cs" />
+    <Compile Include="Paramedical\Query\GetStudentDetailsQuery.cs" />
+    <Compile Include="Paramedical\Query\GetStudentFeeDetailsQuery.cs" />
+    <Compile Include="Paramedical\Query\GetStudentIdQuery.cs" />
+    <Compile Include="Paramedical\Query\GetStudentQuery.cs" />
+    <Compile Include="Paramedical\Query\GetYearsQuery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Diploma\Query\CheckSeatsAvailableQuery.cs" />
+    <Compile Include="Diploma\Query\GenerateDiplomaFeeReceiptQuery.cs" />
+    <Compile Include="Diploma\Query\GetAllBranchesQuery.cs" />
+    <Compile Include="Diploma\Query\GetAuditDetailsQuery.cs" />
+    <Compile Include="Diploma\Query\GetStudentDetailsQuery.cs" />
+    <Compile Include="Diploma\Query\GetStudentFeeDetailsQuery.cs" />
+    <Compile Include="Diploma\Query\GetStudentIdQuery.cs" />
+    <Compile Include="Diploma\Query\GetStudentQuery.cs" />
+    <Compile Include="Diploma\Query\GetYearsQuery.cs" />
+    <Compile Include="Diploma\Query\LoginQuery.cs" />
+    <Compile Include="TakeDatabaseBackupCommand.cs" />
+    <Compile Include="TestDb.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

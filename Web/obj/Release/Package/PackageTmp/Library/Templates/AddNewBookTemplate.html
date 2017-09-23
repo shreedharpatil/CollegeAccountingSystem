@@ -1,0 +1,136 @@
+﻿<section>
+    <div class="html ui top attached segment">
+        <form class="ui form" name="addnewbookform">
+            <h4 class="ui dividing header">New Book Information</h4>
+            <h4 class="ui dividing header">New Book Information</h4>
+            <div class="two fields top-margin-37">
+                <div class="field">
+                    <label>Book ISBN<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <input type="text" class="span12" name="isbn" placeholder="ISBN number" required
+                               data-ng-model="Model.Book.ISBN">
+                        <div class="red bold" data-ng-show="addnewbookform.isbn.$invalid && addnewbookform.isbn.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.IsbnMandatory"></span></div>
+                    </div>
+                </div>
+                <div class="field ">
+                    <label>Book Title<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <input type="text" class="span12" name="title" data-ng-model="Model.Book.Title" required placeholder="Book title" />
+
+                        <div class="red bold" data-ng-show="addnewbookform.title.$invalid && addnewbookform.title.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BookTitleMandatory"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two fields">
+                <div class="field ">
+                    <label>Book Authors<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <input type="text" class="span12" name="authors" data-ng-model="Model.Book.Authors" required placeholder="Book authors seperated by comma" />
+
+                        <div class="red bold" data-ng-show="addnewbookform.authors.$invalid && addnewbookform.authors.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BookauthorsMandatory"></span></div>
+                    </div>
+                </div>
+                <div class="field ">
+                    <label>Book Publishers<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <input type="text" class="span12" name="publishers" data-ng-model="Model.Book.Publishers" required placeholder="Book publishers seperated by comma" />
+
+                        <div class="red bold" data-ng-show="addnewbookform.publishers.$invalid && addnewbookform.publishers.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BookPublishersMandatory"></span></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="two fields">
+                <div class="field ">
+                    <label>Book Edition<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <input type="text" class="span12" name="edition" data-ng-model="Model.Book.Edition" required placeholder="Book edition" />
+
+                        <div class="red bold" data-ng-show="addnewbookform.edition.$invalid && addnewbookform.edition.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BookEditionMandatory"></span></div>
+                    </div>
+                </div>
+                <div class="field ">
+                    <label>Select Branch<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <select class="ui search dropdown" data-ng-options="branch.Id as branch.Name for branch in Model.Branches" required
+                                name="branch" data-ng-model="Model.Book.BranchId"></select>
+                        <div class="red bold" data-ng-show="Model.Book.BranchId == 0 && addnewbookform.branch.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BranchMandatory"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two fields">
+                <div class="field ">
+                    <label>Book Price<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <input type="text" class="span12" name="price" data-ng-model="Model.Book.Price" required placeholder="Book price" data-ng-pattern="Validation.FeeRegEx" />
+                        <div class="red bold" data-ng-show="addnewbookform.price.$error.required && addnewbookform.price.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BookPriceMandatory"></span></div>
+                        <div class="red bold" data-ng-show="addnewbookform.price.$error.pattern && addnewbookform.price.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.NumberRegExMessage"></span></div>
+                    </div>
+                </div>
+                <div class="field ">
+                    <label>Book Quantity<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <input type="text" class="span12" name="quantity" data-ng-model="Model.Book.Quantity" required placeholder="Book quantity" data-ng-pattern="Validation.NumberRegEx" />
+                        <div class="red bold" data-ng-show="addnewbookform.quantity.$error.required && addnewbookform.quantity.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BookQuantityMandatory"></span></div>
+                        <div class="red bold" data-ng-show="addnewbookform.quantity.$error.pattern && addnewbookform.quantity.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.NumberRegExMessage"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two fields">
+                <div class="field ">
+                    <label>Book Language<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <input type="text" class="span12" name="language" data-ng-model="Model.Book.Language" required placeholder="Book language" />
+                        <div class="red bold" data-ng-show="addnewbookform.language.$invalid && addnewbookform.language.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BookLanguageMandatory"></span></div>
+                    </div>
+                </div>
+                <div class="field ">
+                    <label>Select Category<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <div class="span8">
+                            <select class="ui search dropdown" data-ng-options="branch.CategoryId as branch.Description for branch in Model.BookCategories" required
+                                    name="category" data-ng-model="Model.Book.CategoryId"></select>
+                            <div class="red bold" data-ng-show="Model.Book.CategoryId == 0 && addnewbookform.category.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BookCategoryMandatory"></span></div>
+                        </div>
+                        <div class="span4">
+                            <a data-ng-click="Model.NewBookCategory()">Add new category</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two fields">
+                <div class="field ">
+                    <label>Book Description</label>
+                    <div class="field row-fluid">
+                        <textarea class="span12" maxlength="200" name="description" data-ng-model="Model.Book.Description" placeholder="Book description(max 200 chars)"></textarea>
+                        
+                    </div>
+                </div>
+                <div class="field ">
+                    <label>Semister<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <input type="text" class="span12" name="semister" data-ng-model="Model.Book.Semister" required placeholder="Book semister" />
+                        <div class="red bold" data-ng-show="addnewbookform.semister.$invalid && addnewbookform.semister.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.SemisterMandatory"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="float: right">
+                <div class="ui yellow button" data-ng-click="Model.SaveBook()" data-ng-if="addnewbookform.$valid">Submit</div>
+                <div class="ui  button" data-ng-click="Model.Clear()">Clear</div>
+            </div>
+        </form>
+        <div class="ui top attached label" style="font-size: large; font-weight: bold">Add New Book</div>
+    </div>
+
+    <div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="Model.ShowLoader">
+        <div class="ui active dimmer">
+            <div class="ui large text loader">Loading</div>
+        </div>
+    </div>
+</section>

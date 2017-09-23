@@ -1,0 +1,228 @@
+﻿<section style="height: 800px">
+    <div class="html ui top attached segment" id="selectbooksection">
+        <div class="ui top attached label" style="font-size: large; font-weight: bold">Select Student</div>
+
+        <form class="ui form" name="selectstudentform">
+            <div class="three fields">
+                <div class="field ">
+                    <label>Select Educational Area<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <select class="ui search dropdown" required
+                                name="branch" data-ng-model="Model.SearchCriteria.Application" data-ng-change="Model.LoadBranches()">
+                            <option>Diploma</option>
+                            <option>Paramedical</option>
+                            <option>Nursing</option>
+                            <option>Pharmacy</option>
+                            <option>Degree</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field ">
+                    <label>Select Branch<span class="mandatory">*</span></label>
+                    <div class="field row-fluid">
+                        <select class="ui " data-ng-options="branch.Id as branch.Name for branch in Model.Branches" required
+                                name="branch" data-ng-model="Model.SearchCriteria.BranchId"></select>
+                        <div class="red bold" data-ng-show="Model.SearchCriteria.BranchId == 0 && selectstudentform.branch.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BranchMandatory"></span></div>
+                    </div>
+                </div>
+                <div class="field margin-top-23">
+                    <div class="ui yellow button" data-ng-click="Model.LoadStudents()" data-ng-if="Model.SearchCriteria.BranchId != 0">Search</div>
+                </div>
+
+            </div>
+            <div class="fields">
+                <div class="field">
+                    <label>Select Book</label>
+                    <div class="ui floating dropdown labeled icon button">
+                        <i class="users icon"></i>
+                        <span class="text" id="studentsdropdown">Filter Students</span>
+                        <div class="menu">
+                            <div class="ui icon  input">
+                                <i class="search icon"></i>
+                                <input type="text" class="search_box_height span12" placeholder="Search students..." data-ng-model="Model.FilterText">
+                            </div>
+                            <div class="divider"></div>
+                            <div class="header">
+                                <i class="users icon"></i>
+                                Students
+                            </div>
+
+                            <div class="scrolling menu">
+                                <div class="item" data-ng-repeat="student in Model.Students | filter : Model.FilterText" data-ng-click="Model.SelectStudent(student)">
+                                    <img data-ng-src="{{student.Image_Url}}" alt="img" />
+                                    <div class="ui orange  circular label">N</div>
+                                    {{student.Name}}
+                                    <div class="ui orange  circular label">F</div>
+                                    {{student.FatherName }}
+                                    <div class="ui green  circular label">C</div>
+                                    {{student.ContactNumber}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="fields">
+                <div class="field margin-top-10">
+                    <div class="ui orange  circular label">N</div> - Student Name
+                    <div class="ui orange  circular label">F</div> - Father Name
+                    <div class="ui green  circular label">C</div> - Contact Number
+                </div>
+            </div>
+        </form>
+        <div data-ng-if="Model.Student.Id">
+            <div class="field">
+                <h4>Student Details</h4>
+            </div>
+            <table class="ui sortable celled table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Father Name</th>
+                        <th>Address</th>
+                        <th>Contact No.</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="pointer student_card">
+                        <td data-ng-bind="Model.Student.Id"></td>
+                        <td data-ng-bind="Model.Student.Name"></td>
+                        <td data-ng-bind="Model.Student.FatherName"></td>
+                        <td data-ng-bind="Model.Student.Address"></td>
+                        <td data-ng-bind="Model.Student.ContactNumber"></td>
+                        <td data-ng-bind="Model.Student.Gender"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="field">
+                <h4>Books Borrowed</h4>
+            </div>
+
+            <div class="ui special cards margin-top-10">
+                <div class="card student_card" data-ng-repeat="book in Model.BooksBorrowed | filter : Model.FilterText" style="width: 270px">
+                    <div class="content ">
+                        <div id="bookdetails" data-ng-show="!book.ShowEditSection">
+                            <a class="header">{{book.Authors}}</a>
+                            <div class="row-fluid">
+                                <div class="span4">
+                                    <label class="bold">Title</label>
+                                </div>
+                                <div class="span8">
+                                    <span data-ng-bind="book.Title"></span>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span4">
+                                    <label class="bold">Isbn</label>
+                                </div>
+                                <div class="span8">
+                                    <span data-ng-bind="book.ISBN"></span>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span4">
+                                    <label class="bold">Issue Date</label>
+                                </div>
+                                <div class="span8">
+                                    <span data-ng-bind="book.BookIssueDate | date : 'dd/MMM/yyyy'"></span>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span4">
+                                    <label class="bold">Due Date</label>
+                                </div>
+                                <div class="span8">
+                                    <span data-ng-bind="book.BookDueDate | date : 'dd/MMM/yyyy'"></span>
+                                </div>
+                            </div>
+
+                            <div class="row-fluid">
+                                <div class="span4">
+                                    <label class="bold">Fine Amount</label>
+                                </div>
+                                <div class="span8">
+                                    <span data-ng-bind="book.FineAmount | currency : '₹'"></span>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span4">
+                                    <label class="bold">Remarks</label>
+                                </div>
+                                <div class="span8">
+                                    <span data-ng-bind="book.Remarks"></span>
+                                </div>
+                            </div>
+
+                            <div class="row-fluid">
+                                <div class="span4">
+                                    <label class="bold">Status</label>
+                                </div>
+                                <div class="span8">
+                                    <div class="ui orange  circular label" data-ng-class="{true:'green', false:'red'}[book.BookStatusId == 2]">{{book.BookStatus}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="returnsection" data-ng-show="book.ShowEditSection">
+                            <div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="book.ShowLoader">
+                                <div class="ui active dimmer">
+                                    <div class="ui small text loader">Loading</div>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span5">
+                                    <label class="bold">Fine Amt.(₹)</label>
+                                </div>
+                                <div class="span7">
+                                    <input type="text" class="span12" data-ng-model="book.FineAmount" />
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span5">
+                                    <label class="bold">Remarks</label>
+                                </div>
+                                <div class="span7">
+                                    <textarea class="span12" data-ng-model="book.Remarks"></textarea>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="ui yellow button" data-ng-click="Model.ReturnBooks(book)">Return</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="">
+                            <a class="pointer-cursor float-right padding-right-5" data-ng-click="book.ShowEditSection = false"><i class="fa fa-user"></i>Book Details</a>
+                            <a class="pointer-cursor float-right padding-right-5" data-ng-click="book.ShowEditSection = true" data-ng-if="book.BookStatusId == 1">
+                                <i class="fa fa-user"></i>Return Book
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="margin-top-10" id="nobooksborrowed" data-ng-if="Model.BooksBorrowed.length == 0">
+                <div class="ui warning message">
+                    <div class="header">
+                        No books borrowed by {{Model.Student.Name}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="Model.ShowLoader">
+        <div class="ui active dimmer">
+            <div class="ui large text loader">Loading</div>
+        </div>
+    </div>
+</section>
+<script>
+
+    $(document).ready(function () {
+
+        $('.ui.dropdown').dropdown();
+    });
+</script>

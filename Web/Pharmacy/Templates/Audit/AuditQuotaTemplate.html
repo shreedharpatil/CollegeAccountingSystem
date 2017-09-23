@@ -1,0 +1,8 @@
+﻿<section>
+    <ul class="nav nav-tabs">
+        <li data-ng-class="{true:'active', false:''}[Model.CurrentSubTab == 0]"><a href="" data-ng-click="Model.ChangeSubTab(0)">Government Quota</a></li>
+        <li data-ng-class="{true:'active', false:''}[Model.CurrentSubTab == 1]"><a href="" data-ng-click="Model.ChangeSubTab(1)">management Quota</a></li>
+    </ul>
+
+    <div data-ng-include="Model.AuditSubTemplate"></div>
+</section>

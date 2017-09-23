@@ -1,0 +1,68 @@
+<section id="QuotaDetailsUpdate">
+    <div class="html ui top attached segment">
+        <form class="ui form" name="quotaform">
+            <div class="field">
+                <h4>Add Quota Details</h4>
+                <label>Branch<span class="mandatory">*</span></label>
+                <select class="ui search dropdown" data-ng-options="branch.Id as branch.Name for branch in Model.Branches"
+                    name="branch" data-ng-model="Model.Quota.BranchId" required="required">
+                </select>
+                <div class="red bold" data-ng-show="Model.Quota.BranchId == 0 && quotaform.branch.$dirty"><i class="info circle icon"></i><span class="" data-ng-bind="Validation.BranchMandatory"></span></div>
+            </div>
+            <div class="field">
+                <label>Quota<span class="mandatory">*</span></label>
+                <select class="ui search dropdown" data-ng-model="Model.Quota.Quota_Type" name="quota" required="required">
+                    <option value="">----- Please Select ------</option>
+                    <option>Government</option>
+                    <option>Management</option>
+                </select>
+                <div class="red bold" data-ng-show="quotaform.quota.$invalid && quotaform.quota.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.QuotaMandatory"></span></div>
+            </div>
+            <div class="field row-fluid">
+                <label>Number of Seats<span class="mandatory">*</span></label>
+                <input type="text" class="span12" placeholder="Enter number of seats" data-ng-pattern="Validation.NumberRegEx"
+                    name="seats" data-ng-model="Model.Quota.NumberOfSeats" required="">
+                <div class="red bold" data-ng-show="quotaform.seats.$error.required && quotaform.seats.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.NumberRequiredMessage"></span></div>
+                <div class="red bold" data-ng-show="quotaform.seats.$error.pattern && quotaform.seats.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.NumberRegExMessage "></span></div>
+            </div>
+            <div style="float: right">
+                <div class="ui yellow button" data-ng-disabled="quotaform.$invalid"
+                    data-ng-click="Model.SaveQuotaDetails()" data-ng-if="quotaform.$valid && Model.Quota.BranchId != 0">
+                    Submit
+                </div>
+                <div class="ui  button" data-ng-click="Model.ClearQuota()">Clear</div>
+            </div>
+        </form>
+        <div class="ui top attached label">Add Quota Details</div>
+    </div>
+
+</section>
+
+<section id="AddBranch">
+    <div class="html ui top attached segment">
+        <form class="ui form" name="addbranch">
+            <div class="field row-fluid">
+                <h4>Add New Branch</h4>
+                <label>Branch Name<span class="mandatory">*</span></label>
+                <input type="text" class="span12" name="bn" required=""
+                    placeholder="Enter Branch Name to add" data-ng-model="Model.Branch.BranchName">
+                <div class="red bold" data-ng-show="addbranch.bn.$error.required && addbranch.bn.$dirty"><i class="info circle icon"></i><span data-ng-bind="Validation.BranchNameMandatory"></span></div>
+
+            </div>
+            <div style="float: right">
+                <div class="ui yellow button" data-ng-if="addbranch.$valid"
+                    data-ng-click="Model.SaveBranchDetails()">
+                    Submit
+                </div>
+                <div class="ui  button" data-ng-click="Model.ClearBranch()">Clear</div>
+            </div>
+        </form>
+        <div class="ui top attached label">Add New Branch</div>
+    </div>
+</section>
+
+<div class="ui segment margin-top-37" style="position: inherit !important" data-ng-show="Model.ShowLoader">
+    <div class="ui active dimmer">
+        <div class="ui large text loader">Loading</div>
+    </div>
+</div>

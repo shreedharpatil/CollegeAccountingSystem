@@ -1,0 +1,26 @@
+﻿<div class="html ui top attached segment" id="selectbooksection">
+    <div class="ui top attached label" style="font-size: large; font-weight: bold">Select Student</div>
+
+    <form class="ui form" name="bookconfirmform">
+        <div class="three fields">
+            <div class="field ">
+                <label>Select Due date<span class="mandatory">*</span></label>
+                <div class="field row-fluid">
+                    <input type="date" data-ng-model="Model.IssueBook.BookDueDate" />
+                </div>
+            </div>
+            <div class="field ">
+                <label>Any Remarks</label>
+                <div class="field row-fluid">
+                    <textarea data-ng-model="Model.IssueBook.Remarks"></textarea>
+                </div>
+            </div>
+            <div class="field margin-top-23">
+                <div class="ui yellow button" data-ng-click="Model.IssueBooks()" data-ng-if="Model.IssueBook.BookDueDate">Issue Book</div>
+
+                <a class="ui next_previous_button" data-ng-click="Model.ChangeStep(2)" data-ng-if="bookconfirmform.$valid"><i class="pointing left icon"></i>Back</a>
+            </div>
+
+        </div>
+    </form>
+</div>
